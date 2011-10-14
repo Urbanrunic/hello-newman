@@ -12,9 +12,10 @@
             <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
             <a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
             <div class="entry-body">
-                {{ entry.body|apply_markup:entry.markup|truncatewords:60 }} <a href="{{ entry.get_absolute_url }}" class="continue">Continue Reading</a>
+                {{ entry.excerpt|apply_markup:entry.markup }} <a href="{{ entry.get_absolute_url }}" class="continue">Continue Reading</a>
             </div>
             <span class="comment-count"><a href="{{ entry.get_absolute_url }}#disqus_thread">{% disqus_num_replies %} View Comments</a></span>
+            <div class="clearfix"></div>
         </article>
         {% endfor %}
     {% else %}

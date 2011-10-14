@@ -104,15 +104,17 @@ td { vertical-align: top; }
 /* ==|== primary styles ===================================================== Author: Greg Newman  ========================================================================== */
 html, body { background: #282120; }
 
-body { font-family: linden-hill-1, linden-hill-2, sans-serif; font-style: normal; font-weight: 400; line-height: 1.7em; color: #e3d2bf; }
+body { font-family: fanwood-1, fanwood-2, sans-serif; font-style: normal; font-weight: 500; font-size: 17px; line-height: 1.7em; color: #e3d2bf; }
 
 a:link, a:visited { color: #fff; text-decoration: none; font-style: italic; }
 
 #container { background: url(../img/page-bg.png) repeat; border-bottom: 1px solid #000; }
 
-#main, .top-banner-content, header, footer { width: 705px; margin: 0 auto; position: relative; }
+#main, .top-banner-content, header, .footer-block { width: 705px; margin: 0 auto; position: relative; }
 
-footer { height: 70px; }
+footer { height: 70px; background: #282120; border-top: 2px solid #000; padding: 15px 0; color: #b8774d; font-size: 14px; }
+
+article { margin-bottom: 100px; }
 
 .top-banner { width: 100%; height: 70px; margin-bottom: 10px; background: url(../img/top-banner-full-bg.png) repeat-x center; font-family: linden-hill-1, linden-hill-2, sans-serif; font-style: italic; font-weight: 400; }
 
@@ -144,9 +146,9 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .gnewman { float: left; }
 
-.navbar ul { width: 500px; padding: 0; margin: 15px 0 0 0; list-style: none; float: right; text-align: right; }
+.navbar ul { font-family: fanwood-1, fanwood-2, sans-serif; font-style: normal; font-weight: 500; font-size: 18px; width: 500px; padding: 0; margin: 15px 0 0 0; list-style: none; float: right; text-align: right; }
 
-.navbar ul li { display: inline; padding: 0 10px; font-size: 1.2em; }
+.navbar ul li { display: inline; padding: 0 10px; }
 
 .navbar ul li a { color: #d19d64; text-decoration: none; }
 
@@ -156,11 +158,21 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry { font-family: 'fanwood-1, fanwood-2'; font-size: 17px; }
 
-.entry h3, .entry h3 a { font-size: 30px; font-family: 'LindenHillRegular'; font-weight: normal; color: #e3d2bf; text-decoration: none; }
+.entry h3, .entry h3 a, article h2, article h2 a { font-family: linden-hill-1, linden-hill-2, sans-serif; font-style: normal; font-weight: 400; font-size: 30px; color: #e3d2bf; text-decoration: none; }
 
-.entry-date { float: right; color: #b6764c; font-size: 400; }
+.entry-date { font-family: fanwood-1, fanwood-2, sans-serif; font-style: normal; font-weight: 500; font-size: 18px; float: right; color: #b6764c; }
+
+.comment-count { float: right; background: url(../img/icon-comment.png) no-repeat left; padding-left: 20px; font-family: fanwood-1, fanwood-2, sans-serif; font-style: normal; font-weight: 500; font-size: 14px; }
+
+.entry-extra { margin: 40px 0; }
+
+.comment-count a { color: #b6764c; }
 
 .entry img { border: 15px solid #fff; }
+
+.entry-disqus { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 8px solid #e3d2bf; background: #af7248; padding: 20px; }
+
+.entry-disqus h2 { margin: 10px 0 20px 0; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }

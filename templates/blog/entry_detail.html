@@ -1,16 +1,16 @@
-{% extends "site_base.html" %}
-{% load markup %}
-{% load tagging_tags %}
+{% extends "base.html" %}
 {% load markup_tags %}
+{% load tagging_tags %}
 {% load disqus_tags %}
 
 {% block page_title %}{{ entry.title }} by Greg Newman{% endblock %}
 
 {% block content %}
     <article>
-        <h2>{{ entry.title }}</h2>
-        <div class="entry-meta">
-            On {{ entry.created_on|date:"M. jS, y" }}
+        <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
+            {{ entry.title }}</h2>
+        <div class="entry-body">
+            {{ entry.body|apply_markup:entry.markup }}
         </div>
         <div class="entry-extra">
             <span><a href="{{ entry.get_absolute_url }}#disqus_thread">View Comments</a></span>
@@ -23,18 +23,14 @@
             {% endif %}
             In Journal - {% for blog in entry.blog.all %}{{ blog.title }} {% endfor %}
         </div>
+        {% if entry.related_content.all %}
         <div class="related">
             <h3>Related Entries</h3>
             {% for related in entry.related_content.all %}
                 <a href="{{ related.get_absolute_url }}">{{ related.title }}</a>
-            {% empty %}
-                No related entries.
             {% endfor %}
         </div>
-        <div class="entry-body">
-            {{ entry.excerpt|apply_markup:entry.markup }}
-            {{ entry.body|apply_markup:entry.markup }}
-        </div>
+        {% endif %}
     </article>
 
     <section class="entry-disqus">

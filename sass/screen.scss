@@ -71,9 +71,10 @@ html, body {
 }
 
 body {
-    font-family: linden-hill-1,linden-hill-2,sans-serif;
+    font-family: fanwood-1,fanwood-2,sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 1.7em;
     color: #e3d2bf;
 }
@@ -93,7 +94,7 @@ a:visited {
 #main,
 .top-banner-content,
 header,
-footer {
+.footer-block {
     width: 705px;
     margin: 0 auto;
     position: relative;
@@ -101,6 +102,15 @@ footer {
 
 footer {
     height: 70px;
+    background: #282120;
+    border-top: 2px solid #000;
+    padding: 15px 0;
+    color: #b8774d;
+    font-size: 14px;
+}
+
+article {
+    margin-bottom: 100px;
 }
 
 .top-banner {
@@ -181,6 +191,10 @@ span.behance a:hover {
 }
 
 .navbar ul {
+    font-family: fanwood-1,fanwood-2,sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 18px;
     width: 500px;
     padding: 0;
     margin: 15px 0 0 0;
@@ -192,7 +206,6 @@ span.behance a:hover {
 .navbar ul li {
     display: inline;
     padding: 0 10px;
-    font-size: 1.2em;
 }
 
 .navbar ul li a {
@@ -214,26 +227,60 @@ span.behance a:hover {
 }
 
 .entry h3,
-.entry h3 a {
+.entry h3 a,
+article h2,
+article h2 a {
+    font-family: linden-hill-1,linden-hill-2,sans-serif;
+    font-style: normal;
+    font-weight: 400;    
     font-size: 30px;
-    font-family: 'LindenHillRegular';
-    font-weight: normal;
     color: #e3d2bf;
     text-decoration: none;
 }
 
 .entry-date {
+    font-family: fanwood-1,fanwood-2,sans-serif;
+    font-style: normal;
+    font-weight: 500;    
+    font-size: 18px;
     float: right;
     color: #b6764c;
-    font-size: 400;
+}
+
+.comment-count {
+    float: right;
+    background: url(../img/icon-comment.png) no-repeat left;
+    padding-left: 20px;
+    font-family: fanwood-1,fanwood-2,sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 14px;
+}
+
+.entry-extra {
+    margin: 40px 0;
+}
+
+.comment-count a {
+    color: #b6764c;
 }
 
 .entry img {
     border: 15px solid #fff;
 }
 
+.entry-disqus {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 8px solid #e3d2bf;
+    background: #af7248;
+    padding: 20px;
+}
 
-
+.entry-disqus h2 {
+    margin: 10px 0 20px 0;
+}
 
 
 
