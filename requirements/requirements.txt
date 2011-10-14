@@ -11,6 +11,8 @@ django-grappelli
 gunicorn==0.13.4
 python-memcached==1.47
 fabric==1.2.2
+psycopg2==2.4.2
+BeautifulSoup==3.2.0
 
 # editable checkouts
 -e git+git://github.com/robhudson/django-debug-toolbar.git#egg=django-debug-toolbar
