@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src: url('../fonts/OFLGoudyStM.otf');
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: url('../fonts/Junction01.otf');
+}
+
+body {
+    background: #f1f1e9 url(../images/page_bg.png) no-repeat fixed;
+    color: #444;
+    font-family: 'Adobe Caslon Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    letter-spacing: 0.1em;
+    line-height: 145%;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    color: #666;
+    font-weight: 900;
+    text-decoration: none;
+     -webkit-transition: color 250ms linear;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+header {
+    background: url(../images/header_bg.png) no-repeat top center;
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+}
+
+h1, h2, h3 {
+    font-family: 'Sorts Mill Goudy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #666;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+}
+
+header h1 span {
+    font-family: 'Junction', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    display: block;
+    margin-left: 85px;
+}
+
+.profile {
+    margin-right: 15px;
+    width: 220px;
+    font-size: 0.9em;
+    line-height: 200%;
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.profile img {
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 15px;
+}
+
+#page {
+    position: relative;
+    width: 1000px;
+    margin: 5px auto;
+}
+
+nav {
+    margin: 50px 0 0 15px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 9px 0 0 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+}
+
+nav li.home {
+    padding-left: 10px;
+    background: url(../images/home-icon.png) no-repeat left;
+}
+
+nav li.journals {
+    margin-left: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav li a {
+    -webkit-transition: all 100ms linear;
+    color: #444;
+    padding: 3px 5px;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+nav li a:hover {
+    border-bottom: 5px solid #444;
+}
+
+article {
+    float: left;
+    width: 420px;
+    margin: 0 15px 15px 15px;
+}
+
+article h2,
+.entry-disqus h2,
+.sidebar h2,
+.entries h2 {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    font-size: 14pt;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 3px 0 8px 0;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.entry-disqus h2,
+.sidebar h2,
+.entries h2 {
+    background: url(../images/h2_bg.png) no-repeat;
+    font-size: 10pt;
+}
+
+article p {
+    font-size: 0.9em;
+}
+
+article img {
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #444;
+}
+
+.entry-meta {
+    font-family: 'Junction', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.entry-meta span {
+    font-family: "Adobe Caslon Pro", Georgia, serif;
+    display: block;
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.entry-meta ul {
+    list-style: none;
+}
+
+.entry-meta ul li {
+    display: inline;
+}
+
+section.entry-disqus,
+section.entries {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 299px;
+    padding: 0 15px 15px 15px;
+    float: left;
+}
+
+.dsq-dc-logo {
+    display: none;
+}
+
+section.sidebar,
+section.distractions {
+    width: 165px;
+    margin: 0 15px 15px 15px;
+    float: left;
+    font-size: 0.8em;
+}
+
+footer {
+    background: #7d7a4c;
+    color: #fff;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 20px 0 0 0;
+    padding: 20px 0 10px 0;
+    border-top: 2px solid #444444;
+    border-bottom: 50px solid #3d3a17;
+}
+
+footer section {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    font-size: 10pt;
+    padding: 0 0 5px 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f1f1e9;
+    border-top: 1px dotted #f1f1e9;
+    border-bottom: 1px dotted #f1f1e9;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 250ms linear;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .footer-content {
+    width: 960px;
+    margin: 20px auto;
+    text-align: right;
+}
+
+footer .flickr,
+footer .copyright {
+    width: 250px;
+    float: left;
+    padding: 0 15px 15px 15px;
+}
+
+footer .readernaut {
+    width: 350px;
+    float: left;
+    padding: 0 15px 15px 15px;
+}
+
+footer .readernaut a {
+    color: #7d7a4c;
+}
+
+footer .readernaut a:hover {
+    color: #fff;
+}
+
+footer .readernaut div {
+    font-size: 10pt;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 15px;
+    border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    background: rgba(61, 58, 23, 0.5);
+    margin: 10px;
+}
+
+footer .readernaut div:hover {
+    background: rgba(61, 58, 23, 0.7);
+}
+
+footer .readernaut img {
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    border: 1px solid #444;
+}
+
+footer .readernaut p {
+    padding-top: 10px !important;
+}
+
+footer .readernaut span {
+    font-style: italic;
+    display: block;
+    font-size: 0.9em;
+}
+
+footer .flickr img {
+    margin: 3px 7px;
+    padding: 3px;
+    border: 1px solid #444;
+}
+
+footer .copyright h3.respect {
+    margin-top: 20px;
+}
+
+footer .copyright ul {
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 100px;
+    float: left;
+    list-style: none;
+}
+
+footer .copyright ul li {
+    font-family: 'Junction', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 21px;
+    font-size: 9pt;
+}
+
+footer .copyright ul li a {
+    color: #b7b597;
+}
+
+footer .copyright ul li a:hover {
+    color: #fff;
+}
+
+.errorField {
+    background: url(../images/error_bg.png);
+    border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 0 10px 0 30px;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.errorlist {
+    color: #fff;
+    background: #f33;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 10px;
+    list-style: none;
+    float: left;
+    width: 330px;
+}
+
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
