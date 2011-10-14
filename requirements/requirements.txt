@@ -1,0 +1,19 @@
+Django==1.3
+South==0.7.3
+django-reversion==1.5
+textile==2.1.5
+flickrapi==1.4.2
+python-twitter==0.8.2
+feedparser==5.0.1
+django-markup==0.4
+django-tagging==0.3.1
+django-grappelli
+gunicorn==0.13.4
+python-memcached==1.47
+fabric==1.2.2
+
+# editable checkouts
+-e git+git://github.com/robhudson/django-debug-toolbar.git#egg=django-debug-toolbar
+-e git+git://github.com/dziegler/django-css.git#egg=django-css
+-e git+git://github.com/django-extensions/django-extensions.git#egg=django-extensions
+-e git+git://github.com/arthurk/django-disqus.git#egg=disqus
