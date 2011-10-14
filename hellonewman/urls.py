@@ -18,12 +18,3 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
 #    (r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
-
-if settings.DEBUG:
-    urlpatterns += patterns('',
-        # Static Media Serving
-        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {
-            'document_root': settings.MEDIA_ROOT,
-            'show_indexes': True
-        })
-    )
