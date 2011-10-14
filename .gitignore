@@ -2,3 +2,4 @@
 /static/*
 static/*
 local_settings.py
+.sass-cache
