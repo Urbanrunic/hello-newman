@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load flickr %}
 {% block body %}
 <section class="content">
     {% block content %}
@@ -8,21 +7,6 @@
 
     <footer>
         <section>
-            <div class="flickr">
-                <h3>Flickr Pool</h3>
-                {% get_random_photos 5 as random_photos %}
-                {% for photo in random_photos %}
-                    <a href="{{ photo.photopage_url }}" /><img src="http://farm3.static.flickr.com/{{ photo.server }}/{{ photo.flickr_id }}_{{ photo.secret }}.jpg" width="{{ photo.thumbnail_width }}" height="{{ photo.thumbnail_height }}" alt="{{ photo.title }}" /></a>
-                {% endfor %}
-            </div>
-
-            <div class="readernaut">
-                <h3>Reading or Read</h3>
-                {% for book in books %}
-                    <a href="{{ book.permalink }}"><img src="{{ book.cover_small }}" /></a>
-                {% endfor %}
-            </div>
-
             <div class="respect">
                 <h3>Respect</h3>
                 <ul>
