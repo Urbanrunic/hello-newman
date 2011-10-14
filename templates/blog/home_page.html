@@ -1,4 +1,4 @@
-{% extends "site_base.html" %}
+{% extends "base.html" %}
 {% load markup_tags %}
 {% load tagging_tags %}
 {% load markup_tags %}
@@ -7,22 +7,19 @@
 
 {% block content %}
     {% if entries %}
-    {% for entry in entries %}
-    <article>
-        <h2><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
-        <div class="entry-meta">
-            On {{ entry.created_on|date:"M. jS, Y" }}
-            <span><a href="{{ entry.get_absolute_url }}#disqus_thread">View Comments</a></span>
-            {% disqus_num_replies %}
-        </div>
-        <div class="entry-body">
-            {{ entry.body|apply_markup:entry.markup|truncatewords:60 }} <a href="{{ entry.get_absolute_url }}" class="continue">Continue Reading</a>
-        </div>
-    </article>
-    {% endfor %}
+        {% for entry in entries %}
+        <article>
+            <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
+            <a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
+            <div class="entry-body">
+                {{ entry.body|apply_markup:entry.markup|truncatewords:60 }} <a href="{{ entry.get_absolute_url }}" class="continue">Continue Reading</a>
+            </div>
+            <span class="comment-count"><a href="{{ entry.get_absolute_url }}#disqus_thread">{% disqus_num_replies %} View Comments</a></span>
+        </article>
+        {% endfor %}
     {% else %}
         <h2>WHOOPS!</h2>
-        <p>Currently there are no entries in that Journal.  Please check back or use the filters to the right to choose another journal.</p>
+        <p>Currently there are no entries in that Journal.  Please check back yo!</p>
     {% endif %}
 
     <section class="sidebar">
