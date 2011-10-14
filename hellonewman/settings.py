@@ -99,7 +99,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'pagination.middleware.PaginationMiddleware',
 )
 
 DEBUG_TOOLBAR_PANELS = (
@@ -119,7 +118,7 @@ DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False
 }
 
-INTERNAL_IPS = ('127.0.0.1',)
+#INTERNAL_IPS = ('127.0.0.1',)
 
 ROOT_URLCONF = 'hellonewman.urls'
 
@@ -197,7 +196,7 @@ LOGGING = {
 
 SKIP_SOUTH_TESTS=True
 
-GRAPPELLI_ADMIN_TITLE = 'Hello Newman'
+GRAPPELLI_ADMIN_TITLE = 'Greg Newman'
 
 #These are used when loading the test data
 SITE_DOMAIN = "gregnewman.org"
