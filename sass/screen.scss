@@ -231,10 +231,10 @@ span.behance a:hover {
 article h2,
 article h2 a {
     font-family: linden-hill-1,linden-hill-2,sans-serif;
-    font-style: normal;
+    font-style: normal !important;
     font-weight: 400;    
     font-size: 30px;
-    color: #e3d2bf;
+    color: #e3d2bf !important;
     text-decoration: none;
 }
 
@@ -245,6 +245,11 @@ article h2 a {
     font-size: 18px;
     float: right;
     color: #b6764c;
+}
+
+.continue {
+    display: block;
+    text-align: right;
 }
 
 .comment-count {
