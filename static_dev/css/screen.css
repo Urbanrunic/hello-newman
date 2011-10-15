@@ -106,7 +106,7 @@ html, body { background: #282120; }
 
 body { font-family: fanwood-1, fanwood-2, sans-serif; font-style: normal; font-weight: 500; font-size: 17px; line-height: 1.7em; color: #e3d2bf; }
 
-a:link, a:visited { color: #fff; text-decoration: none; font-style: italic; }
+a:link, a:visited { color: #fff; text-decoration: none; }
 
 #container { background: url(../img/page-bg.png) repeat; border-bottom: 1px solid #000; }
 
