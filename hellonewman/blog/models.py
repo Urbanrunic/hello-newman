@@ -82,7 +82,7 @@ class Entry(models.Model):
     expire_on = models.DateTimeField(_('Expire On'), null=True, blank=True)
 
     read_count = models.IntegerField(default=0, editable=False)
-    created_on = CreationDateTimeField()
+    created_on = CreationDateTimeField(editable=True)
     updated_on = ModificationDateTimeField()
 
     class Meta:
