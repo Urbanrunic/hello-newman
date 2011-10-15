@@ -5,6 +5,9 @@
 
 {% block page_title %}{{ entry.title }} by Greg Newman{% endblock %}
 
+{% block meta_keywords %}{{ entry.keywords }}{% endblock %}
+{% block meta_description %}{{ entry.description }}{% endblock %}
+
 {% block content %}
     <article>
         <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
