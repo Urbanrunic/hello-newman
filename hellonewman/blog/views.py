@@ -60,7 +60,7 @@ def home_page(request):
     if 'blog_filter' in request.session:
         entries = Entry.objects.filter(blog__slug=request.session['blog_filter'], published=True)
     else:
-        entries = Entry.objects.published()[:9]
+        entries = Entry.objects.published()#[:9]
                                  
     distractions = Distraction.objects.published()[:5]
     
