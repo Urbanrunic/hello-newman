@@ -53,14 +53,14 @@ class Category(models.Model):
         return self.title
 
 
-class Entry(ImageModel):
+class Entry(models.Model):
     """
     Base class for blog entries
     """
     
     title = models.CharField(_('Title'), max_length=200)
-    thumbnail_image = models.ImageField(upload_to='blog_photos',
-                        blank=True, null=True)
+    #thumbnail_image = models.ImageField(upload_to='blog_photos',
+    #                    blank=True, null=True)
     slug = models.SlugField(_('Slug'), max_length=100, unique=True, help_text=_("This is a unique identifier that allows your page to display its detail view, ex 'this-is-my-title'"))
 
     excerpt = models.TextField(_('Excerpt'), blank=True, null=True, help_text=_("This is a teaser of the body text; optional"))
@@ -100,12 +100,12 @@ class Entry(ImageModel):
 
     objects = EntryManager()
 
-    class IKOptions:
-        # This inner class to define the ImageKit options for the model
-        spec_module = 'blog.image_specs'
-        cache_dir = 'blog_photos'
-        image_field = 'leader_image'
-        save_count_as = 'num_views'
+    #class IKOptions:
+        ## This inner class to define the ImageKit options for the model
+        #spec_module = 'blog.image_specs'
+        #cache_dir = 'blog_photos'
+        #image_field = 'leader_image'
+        #save_count_as = 'num_views'
     
     @permalink
     def get_absolute_url(self):
