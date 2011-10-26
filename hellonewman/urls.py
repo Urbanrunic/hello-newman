@@ -12,7 +12,7 @@ admin.autodiscover()
 #}
     
 urlpatterns = patterns('',
-    url(r'^$', direct_to_template, { 'template': 'landing.html'}),
+    url(r'^$', redirect_to, {'url': 'http://gregnewman.org/journal/'}),
     (r'^journal/', include('blog.urls')),
     (r'^grappelli/', include('grappelli.urls')),
     (r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
