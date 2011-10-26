@@ -1,3 +1,4 @@
+{% load markup %}
 {% load markup_tags %}
 
 <entry xml:base="http://{{ current_site.domain }}/">
