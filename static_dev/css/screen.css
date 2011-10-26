@@ -156,7 +156,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 #main { padding-bottom: 70px; }
 
-.entry { font-family: 'fanwood-1, fanwood-2'; font-size: 17px; }
+.entry { font-family: 'calluna-1, calluna-2'; font-size: 17px; font-weight: 700; }
 
 .entry h3, .entry h3 a, article h2, article h2 a { font-family: linden-hill-1, linden-hill-2, sans-serif; font-style: normal !important; font-weight: 400; font-size: 30px; color: #e3d2bf !important; text-decoration: none; }
 
