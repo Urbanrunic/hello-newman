@@ -182,7 +182,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry-disqus { padding: 20px; border-top: 2px solid #999; }
 
-.dsq-textarea { background: #e2d6c4 !important; }
+.dsq-textarea .dsq-textarea-wrapper, #dsq-content .dsq-input-wrapper { background: #e2d6c4 !important; }
 
 .entry-disqus h2 { margin: 10px 0 20px 0; }
 
