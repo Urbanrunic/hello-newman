@@ -112,7 +112,7 @@ a:link, a:visited { color: #fff; text-decoration: none; }
 
 #main, .top-banner-content, header, .footer-block { width: 705px; margin: 0 auto; position: relative; }
 
-footer { height: 70px; background: #282120; border-top: 2px solid #000; padding: 15px 0; color: #b8774d; font-size: 14px; position: relative; }
+footer { height: 70px; background: #282120; border-top: 2px solid #000; padding: 15px 0; color: #b8774d; font-size: 12px; position: relative; }
 
 .skull { position: absolute; right: 0; bottom: 10px; }
 
