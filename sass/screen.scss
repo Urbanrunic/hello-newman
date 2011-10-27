@@ -66,14 +66,24 @@ td { vertical-align: top; }
    Author: Greg Newman 
    ========================================================================== */
 
+@mixin calluna-light {
+    font-family: calluna-1,calluna-2,serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin calluna-bold {
+    font-family: calluna-1,calluna-2,serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
 html, body {
     background: #282120;
 }
 
 body {
-    font-family: calluna-1,calluna-2,sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    @include calluna-light;
     font-size: 17px;
     line-height: 1.7em;
     color: #e3d2bf;
@@ -123,9 +133,7 @@ article {
 }
 
 .title {
-    font-family: coquette-1,coquette-2,fantasy;
-    font-style: normal;
-    font-weight: 400;
+    @include calluna-bold;
     font-size: 18px;
     display: block;
     width: 350px;
@@ -194,9 +202,7 @@ span.behance a:hover {
 }
 
 .navbar ul {
-    font-family: coquette-1,coquette-2,fantasy;
-    font-style: normal;
-    font-weight: 400;
+    @include calluna-light;
     font-size: 18px;
     width: 500px;
     padding: 0;
@@ -225,18 +231,15 @@ span.behance a:hover {
 }
 
 .entry {
-    font-family: 'calluna-1, calluna-2';
+    @include calluna-light;
     font-size: 17px;
-    font-weight: 700;
 }
 
 .entry h3,
 .entry h3 a,
 article h2,
 article h2 a {
-    font-family: coquette-1,coquette-2,fantasy;
-    font-style: normal;
-    font-weight: 400;
+    @include calluna-bold;
     font-size: 30px;
     color: #e3d2bf !important;
     text-decoration: none;
