@@ -106,7 +106,7 @@ html, body { background: #282120; }
 
 body { font-family: calluna-1, calluna-2, serif; font-style: normal; font-weight: 300; font-size: 17px; line-height: 1.7em; color: #e3d2bf; }
 
-a:link, a:visited { color: #fff; text-decoration: none; }
+a:link, a:visited { color: #b6764c; text-decoration: none; }
 
 #container { background: url(../img/page-bg-dark.png) repeat; border-bottom: 1px solid #000; }
 
@@ -170,7 +170,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry-date { font-family: abril-display-1, abril-display-2, sans-serif; font-style: normal; font-weight: 400; font-size: 11px; float: right; color: #b6764c; }
 
-.continue { display: block; text-align: right; }
+.continue { display: block; text-align: right; font-size: 0.9em; }
 
 .comment-count { float: right; background: url(../img/icon-comment.png) no-repeat left; padding-left: 20px; font-family: abril-display-1, abril-display-2, sans-serif; font-style: normal; font-weight: 400; font-size: 11px; }
 
