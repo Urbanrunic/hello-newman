@@ -290,9 +290,7 @@ article h2 a {
 }
 
 .entry-date {
-    font-family: neuzon-1,neuzon-2,sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    @include abril-regular;
     font-size: 11px;
     float: right;
     color: #b6764c;
@@ -307,9 +305,7 @@ article h2 a {
     float: right;
     background: url(../img/icon-comment.png) no-repeat left;
     padding-left: 20px;
-    font-family: neuzon-1,neuzon-2,sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    @include abril-regular;
     font-size: 11px;
 }
 
