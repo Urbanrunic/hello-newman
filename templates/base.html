@@ -25,6 +25,20 @@
     <!-- TODO: CHANGE THIS!! -->
     <link href="http://feeds.feedburner.com/gregnewman-combined" title="Combined Feed" rel="alternate" type="application/rss+xml" />
     <script src="{{ STATIC_DEV }}js/modernizr-2.0.6.min.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12316735-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </head>
 
 <body id="gregnewman-org" class="{% block body-class %}base{% endblock %}">
@@ -71,20 +85,5 @@
     </div> <!--! end of #container -->
 
 
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-12316735-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-    
-  
 </body>
 </html>
