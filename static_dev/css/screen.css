@@ -184,6 +184,8 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .dsq-textarea .dsq-textarea-wrapper, #dsq-content .dsq-input-wrapper { background: #e2d6c4 !important; }
 
+.dsq-reaction-header { background: #2d2d2d !important; }
+
 .entry-disqus h2 { margin: 10px 0 20px 0; }
 
 /* ==|== non-semantic helper classes ======================================== */
