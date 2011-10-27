@@ -16,22 +16,23 @@
             {{ entry.body|apply_markup:entry.markup }}
         </div>
         <div class="entry-extra">
-            <span><a href="{{ entry.get_absolute_url }}#disqus_thread">View Comments</a></span>
             {% tags_for_object entry as tags %}
             {% if tags %}
                <span>Tagged<br /> 
-            {% for tag in tags %}
-               <a href="{% url tagged-entries tag %}">{{ tag }}</a> 
-            {% endfor %}</span>
+                {% for tag in tags %}
+                <a href="{% url tagged-entries tag %}">{{ tag }}</a>{% if not forloop.last%}, {% endif %} 
+                {% endfor %}</span>
             {% endif %}
             In Journal - {% for blog in entry.blog.all %}{{ blog.title }} {% endfor %}
         </div>
         {% if entry.related_content.all %}
         <div class="related">
             <h3>Related Entries</h3>
+            <ul>
             {% for related in entry.related_content.all %}
-                <a href="{{ related.get_absolute_url }}">{{ related.title }}</a>
+                <li><a href="{{ related.get_absolute_url }}">{{ related.title }}</a></li>
             {% endfor %}
+            </ul>
         </div>
         {% endif %}
     </article>
