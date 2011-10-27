@@ -23,7 +23,6 @@
                 <a href="{% url tagged-entries tag %}">{{ tag }}</a>{% if not forloop.last%}, {% endif %} 
                 {% endfor %}</span>
             {% endif %}
-            In Journal - {% for blog in entry.blog.all %}{{ blog.title }} {% endfor %}
         </div>
         {% if entry.related_content.all %}
         <div class="related">
