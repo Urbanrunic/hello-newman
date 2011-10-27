@@ -84,6 +84,12 @@ td { vertical-align: top; }
     font-weight: 700;
 }
 
+@mixin abril-semibold {
+    font-family: abril-display-1,abril-display-2,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
 html, body {
     background: #282120;
 }
@@ -216,7 +222,7 @@ span.behance a:hover {
 
 .navbar ul {
     @include calluna-light;
-    font-size: 18px;
+    font-size: 14px;
     width: 500px;
     padding: 0;
     margin: 15px 0 0 0;
@@ -252,7 +258,7 @@ span.behance a:hover {
 .entry h3 a,
 article h2,
 article h2 a {
-    @include calluna-bold;
+    @include abril-semibold;
     font-size: 24px;
     color: #e3d2bf !important;
     text-decoration: none;
