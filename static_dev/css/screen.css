@@ -108,7 +108,7 @@ body { font-family: calluna-1, calluna-2, serif; font-style: normal; font-weight
 
 a:link, a:visited { color: #fff; text-decoration: none; }
 
-#container { background: url(../img/page-bg.png) repeat; border-bottom: 1px solid #000; }
+#container { background: url(../img/page-bg-dark.png) repeat; border-bottom: 1px solid #000; }
 
 #main, .top-banner-content, header, .footer-block { width: 705px; margin: 0 auto; position: relative; }
 
