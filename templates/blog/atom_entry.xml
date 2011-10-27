@@ -1,6 +1,6 @@
 {% load markup_tags %}
 
-<entry xml:base="http://gregnewman.org/">
+<entry xml:base="http://{{ current_site.domain }}/">
     <id>http://{{ current_site.domain }}{{ entry.get_absolute_url }}</id>
     <title>{{ entry.title }}</title>
     <link rel="alternate" type="text/html" href="http://{{ current_site.domain }}{{ entry.get_absolute_url }}"/>
