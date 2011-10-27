@@ -90,6 +90,12 @@ td { vertical-align: top; }
     font-weight: 600;
 }
 
+@mixin abril-regular {
+    font-family: abril-display-1,abril-display-2,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}    
+
 @mixin neuzon {
     font-family: neuzon-1,neuzon-2,sans-serif;
     font-style: normal;
@@ -264,7 +270,7 @@ span.behance a:hover {
 .entry h3 a,
 article h2,
 article h2 a {
-    @include neuzon;
+    @include abril-regular;
     font-size: 24px;
     color: #e3d2bf !important;
     text-decoration: none;
