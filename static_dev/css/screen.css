@@ -180,7 +180,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry img { border: 15px solid #fff; }
 
-.entry-disqus { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 8px solid #e3d2bf; background: #5a4d3f; padding: 20px; }
+.entry-disqus { padding: 20px; border-top: 2px solid #999; }
 
 .entry-disqus h2 { margin: 10px 0 20px 0; }
 
