@@ -17,9 +17,6 @@
             <span class="comment-count"><a href="{{ entry.get_absolute_url }}#disqus_thread">{% disqus_num_replies %} View Comments</a></span>
             <div class="clearfix"></div>
         </article>
-        {% if not forloop.last %}
-            <div class="divider"><img src="{{ STATIC_URL }}img/ramp.jpg" /></div>
-        {% endif %}
         {% endfor %}
     {% else %}
         <h2>WHOOPS!</h2>
