@@ -72,6 +72,12 @@ td { vertical-align: top; }
     font-weight: 300;
 }
 
+@mixin calluna-light-italic {
+    font-family: calluna-1,calluna-2,serif;
+    font-style: italic;
+    font-weight: 400;
+}    
+
 @mixin calluna-bold {
     font-family: calluna-1,calluna-2,serif;
     font-style: normal;
@@ -133,7 +139,7 @@ article {
 }
 
 .title {
-    @include calluna-bold;
+    @include calluna-light-italic;
     font-size: 18px;
     display: block;
     width: 350px;
