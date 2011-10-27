@@ -160,7 +160,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry { font-family: calluna-1, calluna-2, serif; font-style: normal; font-weight: 300; font-size: 17px; }
 
-.entry h3, .entry h3 a, article h2, article h2 a { font-family: abril-display-1, abril-display-2, sans-serif; font-style: normal; font-weight: 600; font-size: 24px; color: #e3d2bf !important; text-decoration: none; }
+.entry h3, .entry h3 a, article h2, article h2 a { font-family: neuzon-1, neuzon-2, sans-serif; font-style: normal; font-weight: 400; font-size: 24px; color: #e3d2bf !important; text-decoration: none; }
 
 .excerpt-img { float: left; margin-right: 20px; }
 

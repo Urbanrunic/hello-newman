@@ -90,6 +90,12 @@ td { vertical-align: top; }
     font-weight: 600;
 }
 
+@mixin neuzon {
+    font-family: neuzon-1,neuzon-2,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 html, body {
     background: #282120;
 }
@@ -258,7 +264,7 @@ span.behance a:hover {
 .entry h3 a,
 article h2,
 article h2 a {
-    @include abril-semibold;
+    @include neuzon;
     font-size: 24px;
     color: #e3d2bf !important;
     text-decoration: none;
