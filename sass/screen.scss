@@ -122,6 +122,13 @@ footer {
     padding: 15px 0;
     color: #b8774d;
     font-size: 14px;
+    position: relative;
+}
+
+.skull {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
 }
 
 article {
