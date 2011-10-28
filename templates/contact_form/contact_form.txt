@@ -5,4 +5,4 @@ Company: {{ company_name }}
 
 Body
 ------------------------------------
-{{ body }}
+{{ body|safe }}
