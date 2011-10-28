@@ -342,6 +342,8 @@ article h2 a {
 .profile-img {
     float: right;
     margin: 0 0 15px 20px;
+    -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
 }
 
 form {
