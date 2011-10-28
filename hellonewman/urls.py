@@ -14,6 +14,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', redirect_to, {'url': 'http://gregnewman.org/journal/'}),
     (r'^journal/', include('blog.urls')),
+    url(r'^contact/', include('contact_form.urls')),
     (r'^grappelli/', include('grappelli.urls')),
     (r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
     (r'^admin/', include(admin.site.urls)),

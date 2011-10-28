@@ -163,6 +163,7 @@ INSTALLED_APPS = (
     # local
     'hellonewman.core',
     'hellonewman.blog',
+    'contact_form',
 )
 
 MARKUP_CHOICES = (

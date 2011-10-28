@@ -108,7 +108,7 @@ html, body {
 
 body {
     @include calluna-light;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.7em;
     color: #e3d2bf;
 }
@@ -338,6 +338,130 @@ article h2 a {
 .entry-disqus h2 {
     margin: 10px 0 20px 0;
 }
+
+form {
+	margin-top: 10px;
+	position: relative;
+}
+
+.formrow {
+    width: 630px;
+    background: #333 url(../img/form-row.png);
+    border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    margin-bottom: 4px;
+    padding: 4px 10px 4px 10px;
+}
+
+.formrow span {
+    display: block;
+    color: #999999;
+    font-size: 0.8em;
+    margin-left: 210px;
+}
+
+form label {
+    @include abril-regular;
+    display: block;
+    float: left;
+    width: 200px;
+    margin: .7em 5px 2px 0;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    color: #b9956d;
+}
+
+label.required {
+    color: #b6764c;
+}
+
+form input[type=text],
+form input[type=password] {
+    width: 250px;
+    padding: 3px 8px;
+    color: #333;
+    border: 1px solid #000;
+    background: #e2d6c4;
+}
+
+form select {
+    width: 200px;
+    color: #fff;
+    border: 1px solid #999;
+    background: #e2d6c4;
+}
+
+form textarea {
+    padding: 3px 8px;
+    width: 320px;
+    height: 90px;
+    color: #333;
+    border: 1px solid #000;
+    background: #e2d6c4;
+}
+
+form input[type=text]:focus,
+form textarea:focus,
+form select:focus {
+    background: #ccc;
+    color: #000;
+}
+
+.errorField {
+    background: url(../img/error_bg.png);
+    border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 0 10px 0 30px;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.errorlist {
+    color: #fff;
+    background: #f33;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 10px;
+    list-style: none;
+    float: left;
+    width: 330px;
+}
+
+form h3 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form h1 {
+    text-align: left;
+    color: #666;
+}
+
+button {
+    background: #000;
+    border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    padding: 6px 10px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #b9956d;
+    font-weight: bold;
+    margin: 10px 10px 10px 220px;
+}
+
+button:hover {
+    color: #fff;
+}
+
 
 
 
