@@ -188,6 +188,8 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry-disqus h2 { margin: 10px 0 20px 0; }
 
+.profile-img { float: right; margin: 0 0 15px 20px; }
+
 form { margin-top: 10px; position: relative; }
 
 .formrow { width: 630px; background: #333333 url(../img/form-row.png); border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin-bottom: 4px; padding: 4px 10px 4px 10px; }
