@@ -1,8 +1,8 @@
-{% extends 'site_base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
-        <h2>{{ flatpage.title }}</h2>
-
-        {{ flatpage.content }}
-
+<article>
+    <h2>{{ flatpage.title }}</h2>
+    {{ flatpage.content }}
+</article>
 {% endblock %}
