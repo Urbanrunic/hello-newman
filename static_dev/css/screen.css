@@ -188,7 +188,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .entry-disqus h2 { margin: 10px 0 20px 0; }
 
-.profile-img { float: right; margin: 0 0 15px 20px; -moz-transform: rotate(4deg); -webkit-transform: rotate(4deg); }
+.profile-img { float: right; margin: 0 0 15px 20px; -moz-transform: rotate(4deg); -webkit-transform: rotate(4deg); -moz-box-shadow: 2px 2px 2px #000; -webkit-box-shadow: 2px 2px 2px #000; box-shadow: 2px 2px 2px #000; }
 
 form { margin-top: 10px; position: relative; }
 
