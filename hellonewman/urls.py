@@ -1,16 +1,9 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
-from django.conf import settings
 from django.views.generic.simple import redirect_to
-from django.views.generic.simple import direct_to_template
 
 admin.autodiscover()
 
-#feeds = {
-#    'latest': LatestEntries,
-#    'categories': LatestEntriesByCategory,
-#}
-    
 urlpatterns = patterns('',
     url(r'^$', redirect_to, {'url': 'http://gregnewman.org/journal/'}),
     (r'^journal/', include('blog.urls')),
@@ -32,7 +25,4 @@ urlpatterns = patterns('',
     (r'^blog/text/13393360/stork-lost-one-adoption-renunion$', redirect_to, {'url': 'http://gregnewman.org/journal/2010/jun/11/stork-lost-one-adoption-reunion/'}),
     (r'^blog/text/13393361/rent-to-own$', redirect_to, {'url': 'http://gregnewman.org/journal/2010/jan/17/rent-to-own/'}),
     (r'^blog/text/13393363/painterly-portrait-processing$', redirect_to, {'url': 'http://gregnewman.org/journal/2010/jan/3/painterly-portrait-processing/'}),
-
-    
-#    (r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
