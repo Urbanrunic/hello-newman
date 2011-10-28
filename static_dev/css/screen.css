@@ -154,7 +154,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .navbar ul li a { color: #d19d64; text-decoration: none; }
 
-.banners { margin: 10px 0 50px 0; }
+.banners { margin: 10px 0 50px 0; height: 337px; }
 
 #main { padding-bottom: 100px; }
 

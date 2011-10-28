@@ -22,9 +22,11 @@
     {% block js_extra %}{% endblock %}
     {% disqus_dev %}
 
-    <!-- TODO: CHANGE THIS!! -->
     <link href="http://feeds.feedburner.com/gregnewman-combined" title="Combined Feed" rel="alternate" type="application/rss+xml" />
+    <script src="{{ STATIC_URL }}js/jquery-1.6.2.min.js"></script>
     <script src="{{ STATIC_URL }}js/modernizr-2.0.6.min.js"></script>
+    <script src="{{ STATIC_URL }}js/actions.js"></script>
+
 
     <script type="text/javascript">
 
@@ -69,7 +71,7 @@
                 </ul>
             </div>
             <div class="clearfix"></div>
-            <div class="banners"><img src="{{ STATIC_URL }}img/page-banner-01.png" /><div>
+            <div class="banners"></div>
         </header>
 
         <div id="main" role="main">
