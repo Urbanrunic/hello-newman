@@ -124,7 +124,7 @@ article { margin-bottom: 100px; }
 
 .social { position: absolute; top: 8px; right: 0; }
 
-.social span a { display: block; width: 26px; height: 26px; float: left; margin-left: 10px; }
+.social span a { display: block; width: 25px; height: 25px; float: left; margin-left: 10px; }
 
 span.twitter a { background: url(../img/social-sprites.png) 0px -1px; }
 
