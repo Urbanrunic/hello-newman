@@ -205,17 +205,6 @@ GRAPPELLI_ADMIN_TITLE = 'Greg Newman'
 SITE_DOMAIN = "gregnewman.org"
 SITE_NAME = "Greg Newman"
 
-# Amazon S3 Configuration Settings
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-AWS_ACCESS_KEY_ID = '01TMC7B4Q1A2YHFE5ER2'
-AWS_SECRET_ACCESS_KEY = 'NIu9eHDqdzToJ8u/cPdxROtnMwE48bQrooVlenu+'
-AWS_STORAGE_BUCKET_NAME = 'gregnewman-org'
-AWS_BUCKET_NAME = AWS_STORAGE_BUCKET_NAME
-from S3 import CallingFormat
-AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
-AWS_MEDIA_URL = 'http://s3.amazonaws.com/gregnewman-org/'
-
-
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',

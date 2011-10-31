@@ -14,7 +14,6 @@ python-memcached==1.47
 fabric==1.2.2
 psycopg2==2.4.2
 BeautifulSoup==3.2.0
-django-imagekit==0.4.0
 
 # editable checkouts
 -e git+git://github.com/boto/boto.git@2.0#egg=boto
@@ -23,3 +22,4 @@ django-imagekit==0.4.0
 -e git+git://github.com/dziegler/django-css.git#egg=django-css
 -e git+git://github.com/django-extensions/django-extensions.git#egg=django-extensions
 -e git+git://github.com/arthurk/django-disqus.git#egg=disqus
+-e git+git://github.com/jdriscoll/django-imagekit.git@release/1.0.0#egg=django_imagekit
