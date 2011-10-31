@@ -163,6 +163,7 @@ INSTALLED_APPS = (
     # local
     'hellonewman.core',
     'hellonewman.blog',
+    'hellonewman.portfolio',
     'contact_form',
 )
 
