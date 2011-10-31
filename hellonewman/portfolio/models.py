@@ -45,6 +45,8 @@ class PortfolioImage(models.Model):
         image_field='original_image',
         format='JPEG', quality=90)
 
+    order = models.PositiveIntegerField(_('order'), default=1, blank=True)
+
     # flags
     published = models.BooleanField(_('Published'), default=True)
     
