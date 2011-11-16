@@ -176,7 +176,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .social-buttons { text-align: right; }
 
-.excerpt-img { width: 300px; float: left; margin-right: 15px; display: block; }
+.excerpt-img { width: 300px; margin-top: 4px; float: left; margin-right: 15px; display: block; }
 
 .entry-date { font-family: abril-display-1, abril-display-2, sans-serif; font-style: normal; font-weight: 400; font-size: 11px; float: right; color: #b6764c; }
 
