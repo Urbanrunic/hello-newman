@@ -7,7 +7,7 @@ function twitterCallback2(twitters) {
     }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
       return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
     });
-    statusHTML.push('<p><a href="http://twitter.com/gregnewman">&ldquo;'+status+'&rdquo;</a> &ndash; <small>'+relative_time(twitters[i].created_at)+'</small></p>');
+    statusHTML.push('<p>&ldquo;'+status+'&rdquo; &ndash; <small><a href="http://twitter.com/gregnewman">'+relative_time(twitters[i].created_at)+'</a></small></p>');
   }
   
   $('.loading').fadeOut(750, function() {
