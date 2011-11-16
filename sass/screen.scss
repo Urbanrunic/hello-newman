@@ -314,8 +314,10 @@ article h2 a {
 }
 
 .excerpt-img {
+    width: 300px;
+    float: left;
+    margin-right: 15px;
     display: block;
-    margin: 0 auto;
 }
 
 .entry-date {
