@@ -128,9 +128,31 @@ a:visited {
 .top-banner-content,
 header,
 .footer-block {
-    width: 705px;
+    width: 800px;
     margin: 0 auto;
     position: relative;
+}
+
+header {
+    border-bottom: 1px solid #5f4f3f;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+aside {
+    width: 200px;
+    float: right;
+    min-height: 400px;
+    margin-top: 20px;
+}
+
+aside p a {
+    color: #fff !important;
+}
+
+.left-content {
+    width: 500px;
+    float: left;
 }
 
 footer {
@@ -234,7 +256,7 @@ span.behance a:hover {
 
 .navbar ul {
     @include calluna-light;
-    font-size: 14px;
+    font-size: 1.3em;
     width: 500px;
     padding: 0;
     margin: 15px 0 0 0;
@@ -251,6 +273,12 @@ span.behance a:hover {
 .navbar ul li a {
     color: #d19d64;
     text-decoration: none;
+}
+
+.navbar ul li.store-link a {
+    color: #ccc;
+    text-shadow: 1px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
 }
 
 .banners {

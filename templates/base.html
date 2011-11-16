@@ -67,15 +67,22 @@
                     <li><a href="/journal/">Blog</a></li> 
                     <li><a href="/portfolio/">Portfolio</a></li>
                     <li><a href="/contact/">Contact</a></li>
-                    <li><a href="http://shop.gregnewman.org">Store</a></li>
+                    <li class="store-link"><a href="http://shop.gregnewman.org">Store</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
-            <div class="banners"></div>
+            {% comment %}<div class="banners"></div>{% endcomment %}
         </header>
 
         <div id="main" role="main">
-            {% block content %}{% endblock %}
+            <div class="left-content">
+                {% block content %}{% endblock %}
+            </div>
+            <aside>
+                <a href="http://shop.gregnewman.org/product/aaron-rodgers-print"><img src="http://dl.dropbox.com/u/6062/greg-org/rodgers_framed.jpg" /></a>
+                <p><a href="http://shop.gregnewman.org/product/aaron-rodgers-print">Prints available NOW in the store</a>
+            </aside>
+            <div class="clearfix"></div>
         </div>
 
         <footer>
