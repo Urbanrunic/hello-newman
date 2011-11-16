@@ -230,7 +230,7 @@ button { background: #000; border: 0; -moz-border-radius: 5px; -webkit-border-ra
 
 button:hover { color: #fff; }
 
-.latest_tweet { margin-top: 20px; }
+#latest_tweet { margin-top: 20px; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
