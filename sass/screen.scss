@@ -146,7 +146,7 @@ aside {
     margin-top: 20px;
 }
 
-aside p a {
+aside p.storecopy a {
     color: #fff !important;
 }
 
@@ -502,6 +502,10 @@ button {
 
 button:hover {
     color: #fff;
+}
+
+.latest_tweet {
+    margin-top: 20px;
 }
 
 

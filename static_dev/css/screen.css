@@ -116,7 +116,7 @@ header { border-bottom: 1px solid #5f4f3f; padding-bottom: 15px; margin-bottom: 
 
 aside { width: 200px; float: right; min-height: 400px; margin-top: 20px; }
 
-aside p a { color: #fff !important; }
+aside p.storecopy a { color: #fff !important; }
 
 .left-content { width: 500px; float: left; }
 
@@ -229,6 +229,8 @@ form h1 { text-align: left; color: #666; }
 button { background: #000; border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 6px 10px; outline: 0; border: 0; cursor: pointer; color: #b9956d; font-weight: bold; margin: 10px 10px 10px 220px; }
 
 button:hover { color: #fff; }
+
+.latest_tweet { margin-top: 20px; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
