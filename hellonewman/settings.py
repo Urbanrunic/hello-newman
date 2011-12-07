@@ -134,6 +134,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
+    'hellonewman.respect.context_processors.respect',
 )
 
 INSTALLED_APPS = (
@@ -163,7 +164,8 @@ INSTALLED_APPS = (
     # local
     'hellonewman.core',
     'hellonewman.blog',
-    'hellonewman.portfolio',
+    #'hellonewman.portfolio',
+    'hellonewman.respect',
     'contact_form',
 )
 

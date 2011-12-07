@@ -118,6 +118,12 @@ aside { width: 200px; float: right; min-height: 400px; margin-top: 20px; }
 
 aside p.storecopy a { color: #fff !important; }
 
+aside h3 { border-bottom: 1px solid #5f4f3f; margin: 20px 0 10px; }
+
+aside ul { margin: 0; padding: 0; list-style: none; }
+
+aside ul li { padding: 3px 0 3px 10px; border-bottom: 1px dotted #000; }
+
 .left-content { width: 500px; float: left; }
 
 footer { height: 70px; background: #282120; border-top: 2px solid #000; padding: 15px 0; color: #b8774d; font-size: 12px; position: relative; }

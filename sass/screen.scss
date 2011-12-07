@@ -150,6 +150,22 @@ aside p.storecopy a {
     color: #fff !important;
 }
 
+aside h3 {
+    border-bottom: 1px solid #5f4f3f;
+    margin: 20px 0 10px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside ul li {
+    padding: 3px 0 3px 10px;
+    border-bottom: 1px dotted #000;
+}
+
 .left-content {
     width: 500px;
     float: left;
