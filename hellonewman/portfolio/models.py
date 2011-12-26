@@ -41,9 +41,9 @@ class PortfolioImage(models.Model):
     description = models.TextField(_('description'), blank=True)
     category = models.ManyToManyField(PortfolioCategory)
     original_image = models.ImageField(upload_to='portfolio')
-    thumbnail = ImageSpec([resize.Crop(100, 100)],
+    thumbnail = ImageSpec([resize.Crop(125, 125)],
         image_field='original_image',
-        format='JPEG', quality=90)
+        format='JPEG', options={'quality': 100})
 
     order = models.PositiveIntegerField(_('order'), default=1, blank=True)
 

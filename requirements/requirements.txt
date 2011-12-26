@@ -22,4 +22,4 @@ BeautifulSoup==3.2.0
 -e git+git://github.com/dziegler/django-css.git#egg=django-css
 -e git+git://github.com/django-extensions/django-extensions.git#egg=django-extensions
 -e git+git://github.com/arthurk/django-disqus.git#egg=disqus
--e git+git://github.com/jdriscoll/django-imagekit.git@release/1.0.0#egg=django_imagekit
+-e git+git://github.com/jdriscoll/django-imagekit.git@release/1.1.0#egg=django_imagekit
