@@ -1,0 +1,18 @@
+{% extends "base-no-aside.html" %}
+
+{% block page_title %}Portfolio/Gallery of Greg Newman's Recent Work{% endblock %}
+
+{% block meta_keywords %}gallery, portfolio, greg newman, illustration, art, paintings, wildlife, sports, portraits, caricatures, sketches, drawings{% endblock %}
+{% block meta_description %}Portfolio/Gallery of Greg Newman's Recent Work{% endblock %}
+
+{% block content %}
+    <div class="about-copy">
+        <p>Greg Newman has been a freelance illustrator and devinger (designer & developer) since 2001 doing work for clients to include National Geographic, Discovery Channel and Broadway to name a few.  He currently resides in Charlotte, North Carolina with his wife, son and two dogs.  He is currently accepting new projects and can be contacted through the <a href="/contact/">contact page</a></p>
+    </div>
+    <div class="portfolio-thumbs">
+        {% for work in works %}
+            <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
+        {% endfor %}
+    </div>
+
+{% endblock %}

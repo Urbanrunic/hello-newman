@@ -26,3 +26,15 @@ def gallery_detail(request, slug):
     return render_to_response("portfolio/detail.html", {
         "work": work,
     }, context_instance=RequestContext(request))
+
+
+def home(request):
+    """
+    Home Page
+    """
+    works = PortfolioImage.objects.filter(published=True)
+    
+    return render_to_response("portfolio/home.html", {
+        "works": works,
+    }, context_instance=RequestContext(request))
+
