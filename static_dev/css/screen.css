@@ -242,7 +242,9 @@ button:hover { color: #fff; }
 
 .thumb-last { margin: 0 0 25px 0 !important; }
 
-.portfolio-details { margin: 20px 0; }
+.portfolio-details { margin: 20px 0; width: 612px; }
+
+.portfolio-large { border: 6px solid #fcfffd; -moz-box-shadow: 4px 4px 4px #000; -webkit-box-shadow: 4px 4px 4px #000; box-shadow: 4px 4px 4px #000; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
