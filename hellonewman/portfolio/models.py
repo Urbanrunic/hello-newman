@@ -38,6 +38,7 @@ class PortfolioImage(models.Model):
     """
 
     title = models.CharField(_('title'), max_length=200)
+    slug = AutoSlugField(populate_from='title')
     description = models.TextField(_('description'), blank=True)
     category = models.ManyToManyField(PortfolioCategory)
     original_image = models.ImageField(upload_to='portfolio')
@@ -45,15 +46,23 @@ class PortfolioImage(models.Model):
         image_field='original_image',
         format='JPEG', options={'quality': 100})
 
+    meta_keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
+    meta_description = models.TextField(_('Meta Description'), null=True, blank=True)
+
     order = models.PositiveIntegerField(_('order'), default=1, blank=True)
 
     # flags
     published = models.BooleanField(_('Published'), default=True)
+    read_count = models.IntegerField(default=0, editable=False)
     
     # datefields
     created_on = CreationDateTimeField()
     updated_on = ModificationDateTimeField()
 
+    # increase read count
+    def increase_read_count(self):
+        self.read_count += 1
+        self.save()
 
     class Meta:
         ordering = ['-created_on', ]

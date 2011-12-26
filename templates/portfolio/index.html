@@ -1,0 +1,15 @@
+{% extends "base-no-aside.html" %}
+
+{% block page_title %}{{ entry.title }} by Greg Newman{% endblock %}
+
+{% block meta_keywords %}{{ entry.keywords }}{% endblock %}
+{% block meta_description %}{{ entry.description }}{% endblock %}
+
+{% block content %}
+    <h2>Gallery</h2>
+    <div class="portfolio-thumbs">
+        {% for work in works %}
+            <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" /></a>
+        {% endfor %}
+    </div>
+{% endblock %}
