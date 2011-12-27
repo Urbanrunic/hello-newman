@@ -7,7 +7,7 @@ class PortfolioCategoryAdmin(admin.ModelAdmin):
 
 class PortfolioImageAdmin(admin.ModelAdmin):
     ordering = ('title',)
-    list_display = ('title', 'admin_thumbnail', 'published', 'created_on', 'order')
+    list_display = ('title', 'admin_thumbnail', 'published', 'created_on', 'order', 'read_count')
     list_filter = ('published',)
     save_on_top = True
     admin_thumbnail = AdminThumbnail(image_field='thumbnail')
