@@ -229,6 +229,16 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+# Amazon S3 Configuration Settings
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = ''
+AWS_BUCKET_NAME = AWS_STORAGE_BUCKET_NAME
+from S3 import CallingFormat
+AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
+AWS_MEDIA_URL = ''
+
 # Use local_settings.py for things to override privately
 try:
     from local_settings import *
