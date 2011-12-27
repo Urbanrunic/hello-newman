@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 
 
 urlpatterns = patterns('',
-    url(r'^/(?P<slug>[-\w]+)/$',
+    url(r'^(?P<slug>[-\w]+)/$',
         view = 'hellonewman.portfolio.views.gallery_detail',
         name = 'gallery-detail'
     ),
