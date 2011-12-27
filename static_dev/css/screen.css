@@ -258,7 +258,9 @@ button:hover { color: #fff; }
 
 .portfolio-purchase { margin-top: 25px; }
 
-.portfolio-purchase a { font-size: 1.2em; }
+.portfolio-purchase a { font-size: 1.1em; background: #000; border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 6px 10px; outline: 0; border: 0; cursor: pointer; color: #fff; font-weight: bold; }
+
+.portfolio-purchase a:hover { color: #b9956d; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
