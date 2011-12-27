@@ -22,6 +22,7 @@ def gallery_detail(request, slug):
 
     """
     work = get_object_or_404(PortfolioImage, slug=slug, published=True)
+    work.increase_read_count()
 
     return render_to_response("portfolio/detail.html", {
         "work": work,
