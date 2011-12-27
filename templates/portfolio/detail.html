@@ -5,11 +5,30 @@
 {% block meta_keywords %}{{ work.keywords }}{% endblock %}
 {% block meta_description %}{{ work.description }}{% endblock %}
 
+{% block body-class %}portfolio-body{% endblock %}
 {% block content %}
-    <h2>Gallery: {{ work.title }}</h2>
-    <img src="{{ work.original_image.url }}" class="portfolio-large" />
-
-    <div class="portfolio-details">
-        {{ work.description }}
-    </div>
+    <article>
+        <h2>Gallery: {{ work.title }}</h2>
+        <img src="{{ work.original_image.url }}" class="portfolio-large" />
+    </article>
+    <aside>
+        <div class="portfolio-details">
+            <h3>Project Details</h2>
+            {{ work.description }}
+        </div>
+        <div class="portfolio-categories">
+            <h3>Type of Project</h3>
+            <ul>
+            {% for cat in work.category.all %}
+                <li>{{ cat.name }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% if work.buy_link %}
+        <div class="portfolio-purchase">
+            <a href="{{ work.buy_link }}">Purchase A Print</a>
+        </div>
+        {% endif %}
+    </aside>
+    <div class="clearfix"></div>
 {% endblock %}

@@ -537,8 +537,7 @@ button:hover {
 }
 
 .portfolio-details {
-    margin: 20px 0;
-    width: 612px;
+    margin: 35px 0;
 }
 
 .portfolio-large {
@@ -556,9 +555,29 @@ button:hover {
     text-align: center;
 }
 
+.portfolio-body aside {
+    width: 170px;
+    float: left;
+    margin-left: 30px;
+}
 
+.portfolio-body aside ul li {
+    margin: 0;
+    padding: 3px 0 !important;
+}
 
+.portfolio-body article {
+    width: 600px;
+    float: left;
+}
 
+.portfolio-purchase {
+    margin-top: 25px;
+}
+
+.portfolio-purchase a {
+    font-size: 1.2em;
+}
 
 
 

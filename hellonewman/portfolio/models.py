@@ -46,6 +46,8 @@ class PortfolioImage(models.Model):
         image_field='original_image',
         format='JPEG', options={'quality': 100})
 
+    buy_link = models.URLField(verify_exists=True, max_length=200, null=True, blank=True)
+
     meta_keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
     meta_description = models.TextField(_('Meta Description'), null=True, blank=True)
 

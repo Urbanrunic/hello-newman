@@ -242,11 +242,21 @@ button:hover { color: #fff; }
 
 .thumb-last { margin: 0 0 25px 0 !important; }
 
-.portfolio-details { margin: 20px 0; width: 612px; }
+.portfolio-details { margin: 35px 0; }
 
 .portfolio-large { border: 6px solid #fcfffd; -moz-box-shadow: 4px 4px 4px #000; -webkit-box-shadow: 4px 4px 4px #000; box-shadow: 4px 4px 4px #000; }
 
 .about-copy { width: 600px; font-size: 1.2em; line-height: 1.5em; margin: 15px auto 25px auto; text-align: center; }
+
+.portfolio-body aside { width: 170px; float: left; margin-left: 30px; }
+
+.portfolio-body aside ul li { margin: 0; padding: 3px 0 !important; }
+
+.portfolio-body article { width: 600px; float: left; }
+
+.portfolio-purchase { margin-top: 25px; }
+
+.portfolio-purchase a { font-size: 1.2em; }
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
