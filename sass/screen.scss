@@ -601,6 +601,23 @@ button:hover {
     margin-top: 20px;
 }
 
+.newsletter-link a {
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    background: #bb966e;
+    margin: 0 0 30px 0;
+    padding: 4px 10px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+    line-height: auto;
+}
+
 
 
 
