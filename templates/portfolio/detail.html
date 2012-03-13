@@ -12,7 +12,7 @@
         <img src="{{ work.original_image.url }}" class="portfolio-large" />
 
         <h2>Related Work</h2>
-        <div class="portfolio-thumbs">
+        <div class="portfolio-thumbs related-thumbs">
             {% for work in work.related_content.all %}
             <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
             {% endfor %}
