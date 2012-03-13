@@ -66,6 +66,7 @@ class Entry(models.Model):
     markup = MarkupField(default='textile')
     
     # Meta
+    meta_title = models.CharField(_('Meta Title'), max_length=255, null=True, blank=True)
     keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
     description = models.TextField(_('Meta Description'), null=True, blank=True)
     tags = TagField()

@@ -44,10 +44,12 @@ class PortfolioImage(models.Model):
     original_image = models.ImageField(upload_to='portfolio')
     thumbnail = ImageSpec([resize.Crop(125, 125)],
         image_field='original_image',
-        format='JPEG', options={'quality': 100})
+        format='JPEG')
+    #', options={'quality': 100}
 
     buy_link = models.URLField(verify_exists=True, max_length=200, null=True, blank=True)
 
+    meta_title = models.CharField(_('Meta Title'), max_length=255, null=True, blank=True)
     meta_keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
     meta_description = models.TextField(_('Meta Description'), null=True, blank=True)
 
