@@ -312,8 +312,12 @@ span.behance a:hover {
 }
 
 .entry h3,
+.entry h1, 
 .entry h3 a,
+.entry h1 a,
 article h2,
+article h1,
+article h1 a,
 article h2 a {
     @include abril-regular;
     font-size: 21px;
