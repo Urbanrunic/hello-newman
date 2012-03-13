@@ -53,6 +53,9 @@ class PortfolioImage(models.Model):
     meta_keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
     meta_description = models.TextField(_('Meta Description'), null=True, blank=True)
 
+    # relations
+    related_content = models.ManyToManyField("self", null=True, blank=True)
+
     order = models.PositiveIntegerField(_('order'), default=1, blank=True)
 
     # flags
