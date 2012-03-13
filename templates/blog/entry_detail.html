@@ -10,8 +10,8 @@
 
 {% block content %}
     <article>
-        <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
-            {{ entry.title }}</h2>
+        <h1><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
+            {{ entry.title }}</h1>
         <div class="entry-body">
             {{ entry.body|apply_markup:entry.markup }}
         </div>
