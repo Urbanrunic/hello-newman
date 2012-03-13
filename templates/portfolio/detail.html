@@ -10,6 +10,13 @@
     <article>
         <h1>Gallery: {{ work.title }}</h1>
         <img src="{{ work.original_image.url }}" class="portfolio-large" />
+
+        <h2>Related Work</h2>
+        <div class="portfolio-thumbs">
+            {% for work in works %}
+            <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
+            {% endfor %}
+        </div>
     </article>
     <aside>
         <div class="portfolio-details">
