@@ -149,7 +149,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.flatpages',
-    #'django.contrib.sitemaps',
+    'django.contrib.sitemaps',
     
     # Third Party
     'boto',
