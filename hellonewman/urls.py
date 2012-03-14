@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
-from django.views.generic.simple import redirect_to
+from django.views.generic.simple import redirect_to, direct_to_template
 from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
 from core.sitemap import BlogSitemap, PortfolioSitemap
 
@@ -21,9 +21,10 @@ urlpatterns = patterns('',
     (r'^grappelli/', include('grappelli.urls')),
     (r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
     (r'^admin/', include(admin.site.urls)),
-    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
-    url(r'^robots\.txt$', 'django.views.generic.simple.direct_to_template',
-        {'template': 'robots.txt', 'mimetype': 'text/plain'}),
+    #sitemap
+    #(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    #robots
+    
     
 
     #legacy urls

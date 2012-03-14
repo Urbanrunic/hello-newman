@@ -134,7 +134,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
-    'django.template.loaders.app_directories.Loader',
+    #'django.template.loaders.app_directories.Loader',
     'hellonewman.respect.context_processors.respect',
 )
 
@@ -149,7 +149,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.flatpages',
-    'django.contrib.sitemaps',
+    #'django.contrib.sitemaps',
     
     # Third Party
     'boto',
