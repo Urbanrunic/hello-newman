@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     (r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
     (r'^admin/', include(admin.site.urls)),
     (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    url(r'^robots\.txt$', 'django.views.generic.simple.direct_to_template',
+        {'template': 'robots.txt', 'mimetype': 'text/plain'}),
+    
 
     #legacy urls
     (r'^blog/text/13432767/mjd-painting$', redirect_to, {'url': 'http://gregnewman.org/journal/2011/oct/10/faces-nfl-project-mjd/'}),
