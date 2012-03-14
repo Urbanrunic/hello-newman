@@ -1,8 +1,16 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
 from django.views.generic.simple import redirect_to
+from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
+from core.sitemap import BlogSitemap, PortfolioSitemap
 
 admin.autodiscover()
+
+sitemaps = {
+    'flatpages': FlatPageSitemap,
+    'blog': BlogSitemap,
+    'portfolio': PortfolioSitemap,
+        }
 
 urlpatterns = patterns('',
     #url(r'^$', redirect_to, {'url': 'http://gregnewman.org/journal/'}),
@@ -13,6 +21,7 @@ urlpatterns = patterns('',
     (r'^grappelli/', include('grappelli.urls')),
     (r'^admin/jsi18n/$', 'django.views.i18n.javascript_catalog'),
     (r'^admin/', include(admin.site.urls)),
+    (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
     #legacy urls
     (r'^blog/text/13432767/mjd-painting$', redirect_to, {'url': 'http://gregnewman.org/journal/2011/oct/10/faces-nfl-project-mjd/'}),

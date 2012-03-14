@@ -78,6 +78,13 @@ class PortfolioImage(models.Model):
     def __unicode__(self):
         return self.title
 
+    @permalink
+    def get_absolute_url(self):
+        return ('entry-detail', None, {
+            'slug': self.slug,
+        })
+
+
 
 
 
