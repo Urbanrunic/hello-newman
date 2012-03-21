@@ -1,5 +1,7 @@
 {% extends 'base-no-aside.html' %}
 
+{% block body-class %}{% ifequal flatpage.url "/commissions/" %}commissions{% endifequal %}{% endblock %}
+
 {% block page_title %}About Greg Newman, the artist, illustrator and developer{% endblock %}
 
 {% block meta_keywords %}about greg, greg newman, greg, newman, illustration, illustrator, artist, designer, django, art, motorcycle, harley, harley art, painting, painter12, photoshop, watercolor, oil paint, drawing, sketching{% endblock %}
