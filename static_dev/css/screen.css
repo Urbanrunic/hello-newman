@@ -168,7 +168,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .navbar ul li a { color: #d19d64; text-decoration: none; }
 
-.navbar ul li.store-link a { color: #ccc; text-shadow: 1px 1px 1px #000000; filter: dropshadow(color=black, offx=1, offy=1); }
+.navbar ul li.store-link a { color: #ccc; font-weight: bold; text-shadow: 1px 1px 1px #000000; filter: dropshadow(color=black, offx=1, offy=1); }
 
 .banners { margin: 10px 0 50px 0; height: 337px; }
 
