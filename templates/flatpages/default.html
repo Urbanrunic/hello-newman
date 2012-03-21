@@ -2,12 +2,12 @@
 
 {% block body-class %}{% ifequal flatpage.url "/commissions/" %}commissions{% endifequal %}{% endblock %}
 
-{% block page_title %}About Greg Newman, the artist, illustrator and developer{% endblock %}
+{% block page_title %}{% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} Greg Newman, the artist, illustrator and developer{% endblock %}
 
-{% block meta_keywords %}about greg, greg newman, greg, newman, illustration, illustrator, artist, designer, django, art, motorcycle, harley, harley art, painting, painter12, photoshop, watercolor, oil paint, drawing, sketching{% endblock %}
+{% block meta_keywords %}{% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} greg, greg newman, greg, newman, illustration, illustrator, artist, designer, django, art, motorcycle, harley, harley art, painting, painter12, photoshop, watercolor, oil paint, drawing, sketching{% endblock %}
 
 {% block meta_description %}
-    About Greg Newman is a freelance illustrator specializing in motorcycle, harley davidson, portrait, and wildlife illustrations; as well as design, and development for the intertubes.
+    {% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} Greg Newman is a freelance illustrator specializing in motorcycle, harley davidson, portrait, and wildlife illustrations; as well as design, and development for the intertubes.
 {% endblock %}
 
 {% block content %}
