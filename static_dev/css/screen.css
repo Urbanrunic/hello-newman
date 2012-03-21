@@ -162,7 +162,7 @@ span.behance a:hover { background: url(../img/social-sprites.png) -160px 28px; }
 
 .gnewman { float: left; }
 
-.navbar ul { font-family: calluna-1, calluna-2, serif; font-style: normal; font-weight: 300; font-size: 1.3em; width: 500px; padding: 0; margin: 15px 0 0 0; list-style: none; float: right; text-align: right; }
+.navbar ul { font-family: calluna-1, calluna-2, serif; font-style: normal; font-weight: 300; font-size: 1.3em; width: 560px; padding: 0; margin: 15px 0 0 0; list-style: none; float: right; text-align: right; }
 
 .navbar ul li { display: inline; padding: 0 10px; }
 
