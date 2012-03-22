@@ -13,7 +13,7 @@
 
         {% if work.tags.all %}
         <div class="portfolio-tags">
-            <b>Tags:</b> {% for tag in work.tags.all %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
+            <b>Tags:</b> {% for tag in work.tags.all %}<a href="{% url tag-list tag.slug %}">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
         </div>
         {% endif %}
 

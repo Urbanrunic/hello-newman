@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from hellonewman.portfolio.models import *
+from taggit.models import Tag
 
 
 def gallery_home(request):
@@ -40,5 +41,20 @@ def category_list(request, slug):
 
     return render_to_response("portfolio/index.html", {
         "category": category,
+        "works": works,
+    }, context_instance=RequestContext(request))
+
+
+def tag_list(request, tag):
+    """
+    displays all images for the given tag
+    expects [slug]
+    """
+
+    tags = Tag.objects.get(slug=tag)
+    works = PortfolioImage.objects.filter(published=True, tags__slug__in=[tag])
+
+    return render_to_response("portfolio/index.html", {
+        "category": tags.name.title(),
         "works": works,
     }, context_instance=RequestContext(request))
