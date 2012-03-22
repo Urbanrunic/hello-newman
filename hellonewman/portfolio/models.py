@@ -8,6 +8,9 @@ from django_extensions.db.fields import ModificationDateTimeField
 from imagekit.models import ImageSpec
 from imagekit.processors import resize
 
+tagging = models.get_app('tagging')
+from tagging.fields import TagField
+
 
 class PortfolioCategory(models.Model):
     """
@@ -41,6 +44,8 @@ class PortfolioImage(models.Model):
     slug = AutoSlugField(populate_from='title')
     description = models.TextField(_('description'), blank=True)
     category = models.ManyToManyField(PortfolioCategory)
+    tags = TagField()
+
     original_image = models.ImageField(upload_to='portfolio')
     thumbnail = ImageSpec([resize.Crop(125, 125)],
         image_field='original_image',
