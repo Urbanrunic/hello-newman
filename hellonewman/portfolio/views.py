@@ -29,13 +29,16 @@ def gallery_detail(request, slug):
     }, context_instance=RequestContext(request))
 
 
-def home(request):
+def category_list(request, slug):
     """
-    Home Page
+    displays all images for the given category
+    expects [slug]
     """
-    works = PortfolioImage.objects.filter(published=True)
-    
-    return render_to_response("portfolio/home.html", {
+
+    category = get_object_or_404(PortfolioCategory, slug=slug)
+    works = PortfolioImage.objects.filter(published=True, category=category)
+
+    return render_to_response("portfolio/index.html", {
+        "category": category,
         "works": works,
     }, context_instance=RequestContext(request))
-

@@ -11,12 +11,14 @@
         <h1>Gallery: {{ work.title }}</h1>
         <img src="{{ work.original_image.url }}" class="portfolio-large" />
 
+        {% if work.related_content.all %}
         <h2>Related Work</h2>
         <div class="portfolio-thumbs related-thumbs">
             {% for work in work.related_content.all %}
             <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
             {% endfor %}
         </div>
+        {% endif %}
     </article>
     <aside>
         <div class="portfolio-details">
@@ -27,7 +29,7 @@
             <h3>Type of Project</h3>
             <ul>
             {% for cat in work.category.all %}
-                <li>{{ cat.name }}</li>
+            <li><a href="{% url category-list cat.slug %}">{{ cat.name }}</a></li>
             {% endfor %}
             </ul>
         </div>

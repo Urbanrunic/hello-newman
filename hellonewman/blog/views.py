@@ -15,6 +15,19 @@ from tagging.models import Tag, TaggedItem
 
 from hellonewman.blog.models import Entry, Distraction, Blog, FeedHit, Category
 from hellonewman.blog.exceptions import InvalidBlog
+from hellonewman.portfolio.models import PortfolioImage
+
+
+def home(request):
+    """
+    Home Page - this is the main landing page.
+    """
+    works = PortfolioImage.objects.filter(published=True)
+    
+    return render_to_response("portfolio/home.html", {
+        "works": works,
+    }, context_instance=RequestContext(request))
+
 
 @login_required
 def preview(request, slug):

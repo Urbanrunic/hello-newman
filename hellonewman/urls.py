@@ -14,7 +14,7 @@ sitemaps = {
 
 urlpatterns = patterns('',
     #url(r'^$', redirect_to, {'url': 'http://gregnewman.org/journal/'}),
-    url(r'^$', 'portfolio.views.home', name='home'),
+    url(r'^$', 'blog.views.home', name='home'),
     (r'^journal/', include('blog.urls')),
     url(r'^contact/', include('contact_form.urls')),
     url(r'^portfolio/', include('portfolio.urls')),

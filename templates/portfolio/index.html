@@ -6,7 +6,7 @@
 {% block meta_description %}Portfolio of Greg Newman's illustration work.  Wildlife, portrait and motorcycle paintings.{% endblock %}
 
 {% block content %}
-    <h2>Gallery</h2>
+<h2>{% if category %}{{ category }} {% endif %}Gallery</h2>
     <div class="portfolio-thumbs">
         {% for work in works %}
         <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
