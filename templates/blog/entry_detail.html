@@ -30,10 +30,9 @@
                 </script>
             </div>
 
-            {% tags_for_object entry as tags %}
-            {% if tags %}
+            {% if entry.tags.all %}
                <span>Tagged<br /> 
-                {% for tag in tags %}
+                {% for tag in entry.tags.all %}
                 <a href="{% url tagged-entries tag %}">{{ tag }}</a>{% if not forloop.last%}, {% endif %} 
                 {% endfor %}</span>
             {% endif %}

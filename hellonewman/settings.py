@@ -157,7 +157,7 @@ INSTALLED_APPS = (
     'grappelli',
     'compressor',
     'south',
-    'tagging',
+    'taggit',
     'django_extensions',
     'django_markup',
     'reversion',

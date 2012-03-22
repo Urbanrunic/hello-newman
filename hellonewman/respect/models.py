@@ -3,8 +3,6 @@ from django.utils.translation import ugettext_lazy as _
 from django_extensions.db.fields import CreationDateTimeField
 from django_extensions.db.fields import ModificationDateTimeField
 
-tagging = models.get_app('tagging')
-
 class People(models.Model):
     """
     Base class for linking to people I respect.

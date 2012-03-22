@@ -1,5 +1,4 @@
 {% extends "base-no-aside.html" %}
-{% load tagging_tags %}
 
 {% block page_title %}{{ work.meta_title }}{% endblock %}
 
@@ -12,10 +11,9 @@
         <h1>Gallery: {{ work.title }}</h1>
         <img src="{{ work.original_image.url }}" class="portfolio-large" />
 
-        {% tags_for_object work as tags %}
-        {% if tags %}
+        {% if work.tags.all %}
         <div class="portfolio-tags">
-            <b>Tags:</b> {% for tag in tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
+            <b>Tags:</b> {% for tag in work.tags.all %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
         </div>
         {% endif %}
 

@@ -7,8 +7,7 @@ from django_extensions.db.fields import AutoSlugField
 from django_extensions.db.fields import CreationDateTimeField
 from django_extensions.db.fields import ModificationDateTimeField
 
-tagging = models.get_app('tagging')
-from tagging.fields import TagField
+from taggit.managers import TaggableManager
 from blog.managers import BlogManager, EntryManager, DistractionManager
 
 class Blog(models.Model):
@@ -69,7 +68,7 @@ class Entry(models.Model):
     meta_title = models.CharField(_('Meta Title'), max_length=255, null=True, blank=True)
     keywords = models.CharField(_('Meta Keywords'), max_length=200, null=True, blank=True)
     description = models.TextField(_('Meta Description'), null=True, blank=True)
-    tags = TagField()
+    tags = TaggableManager()
 
     # relations
     related_content = models.ManyToManyField("self", null=True, blank=True)
