@@ -298,6 +298,4 @@ footer h3 { color: #F4DCAC; }
 
 #cart-footer .checkout-btn { margin-left: 8px; cursor: pointer; }
 
-#cart-footer .update-btn span, #cart-footer .checkout-btn span { display: none; }
-
 span.total-discount, span.total-shipping { font-weight: bold; }
