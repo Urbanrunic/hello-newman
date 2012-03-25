@@ -669,14 +669,14 @@ footer h3 {
   display: block;
   width: 18px;
   height: 18px;
-  background: url({{ 'btn-prev.gif' | theme_image_url }}) no-repeat;
+  background: url('btn-prev.gif') no-repeat;
   }
 
 #product-images .images-next a {
   display: block;
   width: 18px;
   height: 18px;
-  background: url({{ 'btn-next.gif' | theme_image_url }}) no-repeat;
+  background: url('btn-next.gif') no-repeat;
   }
 
 #product-images .images-prev span,
