@@ -236,8 +236,6 @@ footer h3 { color: #F4DCAC; }
 #head-options span { display: none; }
 
 /* Cart Table Body -----------------------------------------*/
-#cart-body { font-size: 9px; }
-
 #cart-body th { padding-left: 10px; font-weight: normal; }
 
 #cart-body td { padding: 9px 12px 9px 0; }
