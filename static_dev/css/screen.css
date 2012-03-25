@@ -187,3 +187,7 @@ footer h3 { color: #F4DCAC; }
 .dribbble-shots { display: block; }
 
 .dribbble-shots img { border: 6px solid #000; }
+
+/* ` Store View Elements
+----------------------------------------------------------------------------*/
+#home-page .product { float: left; width: 50%; }
