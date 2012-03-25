@@ -4,6 +4,8 @@
 {% load comparison %}
 {% load disqus_tags %}
 
+{% block body-class %}journal-body{% endblock %}
+
 {% block page_title %}Blog of Greg Newman's Recent Work and thoughts{% endblock %}
 
 {% block meta_keywords %}blog, journal, gallery, portfolio, greg newman, illustration, art, paintings, wildlife, sports, portraits, caricatures, sketches, drawings, motorcycle art, motorcycles, harley davidson{% endblock %}
@@ -12,16 +14,17 @@
 
 {% block content %}
     {% if entries %}
+        <div class="journal-row">
         {% for entry in entries %}
-        <article>
-            <h2><span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
-            <a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
+        <div class="journal-excerpt eight columns">
+            <span class="entry-date">{{ entry.created_on|date:"M. jS, Y" }}</span>
+            <h2><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
             <div class="entry-body">
                 {{ entry.excerpt|apply_markup:entry.markup }} <a href="{{ entry.get_absolute_url }}" class="continue">Continue Reading</a>
             </div>
-            <span class="comment-count"><a href="{{ entry.get_absolute_url }}#disqus_thread">{% disqus_num_replies %} View Comments</a></span>
             <div class="clearfix"></div>
-        </article>
+        </div>
+        {% if forloop.counter|divisibleby:"2" %}</div><div class="clearfix"></div>{% if not forloop.last %}<div class="journal-row">{% endif %}{% endif %}
         {% endfor %}
     {% else %}
         <h2>WHOOPS!</h2>

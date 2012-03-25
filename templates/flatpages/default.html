@@ -1,6 +1,6 @@
-{% extends 'base-no-aside.html' %}
+{% extends 'base.html' %}
 
-{% block body-class %}{% ifequal flatpage.url "/commissions/" %}commissions{% endifequal %}{% endblock %}
+{% block body-class %}{% ifequal flatpage.url "/commissions/" %}commissions{% endifequal %}{% ifequal flatpage.url "/about/" %}about{% endifequal %}{% endblock %}
 
 {% block page_title %}{% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} Greg Newman, the artist, illustrator and developer{% endblock %}
 

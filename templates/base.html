@@ -16,6 +16,8 @@
     <script type="text/javascript" src="http://use.typekit.com/wmv5dmj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/skeleton.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/screen.css">
 
     {% block css_extra %}{% endblock %}
@@ -27,7 +29,22 @@
     <script src="{{ STATIC_URL }}js/modernizr-2.0.6.min.js"></script>
     <script src="{{ STATIC_URL }}js/actions.js"></script>
     <script src="{{ STATIC_URL }}js/twitter.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.jribbble-1.0.0.ugly.js"></script>
 
+    <script>
+    $.jribbble.getShotsByPlayerId('newman', function (playerShots) {
+    var html = [];
+
+    $.each(playerShots.shots, function (i, shot) {
+        html.push('<a href="' + shot.url + '">');
+        html.push('<img src="' + shot.image_teaser_url + '" ');
+        html.push('alt="' + shot.title + '"></a></li>');
+    });
+
+    $('#dribbble-shots').html(html.join(''));
+}, {page: 1, per_page: 1});
+        
+    </script>
 
 
     <script type="text/javascript">
@@ -46,75 +63,81 @@
 </head>
 
 <body id="gregnewman-org" class="{% block body-class %}base{% endblock %}">
-    <div id="container">
-        <div class="top-banner">
-            <div class="top-banner-content">
-                <span class="title">Illustrator ~ Artist ~ Devigner</span>
-                <div class="social">
-                    <span class="twitter"><a href="http://twitter.com/gregnewman"></a></span>
-                    <span class="dribbble"><a href="http://dribbble.com/newman"></a></span>
-                    <span class="facebook"><a href="https://www.facebook.com/NewmanStudiosFineArt"></a></span>
-                    <span class="flickr"><a href="http://www.flickr.com/photos/busyashell/"></a></span>
-                    <span class="behance"><a href="http://www.behance.net/gregnewman"></a></span>
-                </div>
-            </div>
-        </div>
-
-        <header>
-        <span class="gnewman"><a href="/"><img src="{{ STATIC_URL }}img/logo.png" /></a></span>
-            <div class="navbar">
+    <nav>
+        <div class="container sixteen columns">
+            <div class="navbar ten columns alpha">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/journal/">Blog</a></li> 
-                    <li><a href="/portfolio/">Gallery</a></li>
-                    <li><a href="/commissions/">Commissions</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li class="store-link"><a href="http://shop.gregnewman.org">Store</a></li>
+                    <li class="shop-link"><a href="http://shop.gregnewman.org">Shop</a></li>
+                    <li class="about-nav"><a href="/about/">About</a></li>
+                    <li class="commissions-nav"><a href="/commissions/">Commissions</a></li>
+                    <li class="journal-nav"><a href="/journal/">Journal</a></li> 
+                    <li class="portfolio-nav"><a href="/portfolio/">Gallery</a></li>
+                    <li class="contact-nav"><a href="/contact/">Contact</a></li>
                 </ul>
             </div>
-            <div class="clearfix"></div>
-            {% comment %}<div class="banners"></div>{% endcomment %}
-        </header>
+            <div class="social six columns omega">
+                <ul>
+                    <li class="twitter"><a href="http://twitter.com/gregnewman"></a></li>
+                    <li class="dribbble"><a href="http://dribbble.com/newman"></a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/NewmanStudiosFineArt"></a></li>
+                    <li class="flickr"><a href="http://www.flickr.com/photos/busyashell/"></a></li>
+                    <li class="behance"><a href="http://www.behance.net/gregnewman"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container sixteen columns">
+            <div class="bike"></div>
+            <h1><a href="/"><img src="{{ STATIC_URL }}img/logo.png" /></a></h1>
+        </div>
+    </header>
 
-        <div id="main" role="main">
-            <div class="left-content">
+    <section>
+        <div class="container sixteen columns">
+            <div id="main" role="main">
                 {% block content %}{% endblock %}
             </div>
-            <aside>
-                <div class="newsletter-link">
-                    <!-- // MAILCHIMP SUBSCRIBE CODE \\ -->
-                    <a href="http://eepurl.com/jy1OP">Subscribe to the newsletter!</a>
-                    <!-- \\ MAILCHIMP SUBSCRIBE LINK // -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="{{ STATIC_URL }}img/skull.png" class="skull" />
+
+            <div class="copyright six columns">
+                <h3>Legal</h3>
+                <p>&copy;2010 Greg Newman, All Rights Reserved.</p>
+                <p>Content, site design, images and illustrations may not be reproduced without written permission from Greg.</p>
+                <p>Social icons by the legendary taxidermist, <a href="http://rogieking.com">Rogie King</a>.</p>
+            </div>
+
+            <div class="respect five columns">
+                <h3>Respectables</h3>
+                <ul>
+                    {% for person in people %}
+                    <li><a href="{{ person.url }}" target="_blank">{{ person.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="five columns">
+                <div class="dribbble-shots">
+                    <h3>Latest Dribbble</h3>
+                    <div id="dribbble-shots"></div>
+                    <div class="clearfix"></div>
                 </div>
-                
-                <p class="storecopy"><a href="http://shop.gregnewman.org/product/aaron-rodgers-print">Prints available NOW in the store</a>
+
                 <div id="latest_tweet">
+                    <h3>From Twitter</h3>
                     <div class="loading"></div>
                 </div>
-
-                <div class="respect">
-                    <h3>Respectables</h3>
-                    <ul>
-                        {% for person in people %}
-                        <li><a href="{{ person.url }}" target="_blank">{{ person.name }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-            </aside>
-            <div class="clearfix"></div>
-        </div>
-
-        <footer>
-            <div class="footer-block">
-                <img src="{{ STATIC_URL }}img/skull.png" class="skull" />
-                &copy;2010 Greg Newman, All Rights Reserved.<br />Content, site design, images and illustrations may not be reproduced without written permission from Greg.<br />
-                Social icons by the legendary taxidermist, <a href="http://rogieking.com">Rogie King</a>.
             </div>
-        </footer>
-    </div> <!--! end of #container -->
+
+        </div>
+    </footer>
 
 
 </body>
 </html>
+

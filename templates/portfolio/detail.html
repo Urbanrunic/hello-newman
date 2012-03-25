@@ -1,4 +1,4 @@
-{% extends "base-no-aside.html" %}
+{% extends "base.html" %}
 
 {% block page_title %}{{ work.meta_title }}{% endblock %}
 
@@ -9,54 +9,64 @@
 {% block content %}
     <article>
         <h1>Gallery: {{ work.title }}</h1>
-        <img src="{{ work.original_image.url }}" class="portfolio-large" />
+        <div class="portfolio-detail eleven columns alpha">
+            <img src="{{ work.original_image.url }}" class="portfolio-large" />
 
-        {% if work.tags.all %}
-        <div class="portfolio-tags">
-            <b>Tags:</b> {% for tag in work.tags.all %}<a href="{% url tag-list tag.slug %}">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
-        </div>
-        {% endif %}
-
-        {% if work.related_content.all %}
-        <h2>Related Work</h2>
-        <div class="portfolio-thumbs related-thumbs">
-            {% for work in work.related_content.all %}
-            <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
-            {% endfor %}
-        </div>
-        {% endif %}
-    </article>
-    <aside>
-        <div class="portfolio-details">
-            <h3>Project Details</h3>
-            {{ work.description }}
-        </div>
-        <div class="portfolio-categories">
-            <h3>Type of Project</h3>
-            <ul>
-            {% for cat in work.category.all %}
-            <li><a href="{% url category-list cat.slug %}">{{ cat.name }}</a></li>
-            {% endfor %}
-            </ul>
-        </div>
-        {% if work.buy_link %}
-        <div class="portfolio-purchase">
-            <a href="{{ work.buy_link }}">Purchase Prints</a>
-        </div>
-        {% endif %}
-        <div class="portfolio-social">
-            <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="gregnewman" data-text="A must see:">Tweet</a>
+            {% if work.tags.all %}
+            <div class="portfolio-tags">
+                <b>Tags:</b> {% for tag in work.tags.all %}<a href="{% url tag-list tag.slug %}">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
+            </div>
+            {% endif %}
             
-            <g:plusone size="medium" annotation="none"></g:plusone>
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
+            {% if work.related_content.all %}
+            <div class="portfolio-related">
+                <h2>Related Work</h2>
+                <div class="portfolio-thumbs related-thumbs">
+                    {% for work in work.related_content.all %}
+                    <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} /></a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            
         </div>
-    </aside>
+
+        <div class="five columns omega">
+            <div class="portfolio-details">
+                <h3>Project Details</h3>
+                {{ work.description }}
+            </div>
+
+            <div class="portfolio-categories">
+                <h3>Type of Project</h3>
+                <ul>
+                {% for cat in work.category.all %}
+                <li><a href="{% url category-list cat.slug %}">{{ cat.name }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+
+            {% if work.buy_link %}
+                <div class="portfolio-purchase">
+                    <a href="{{ work.buy_link }}">Purchase Prints</a>
+                </div>
+            {% endif %}
+            
+            <div class="portfolio-social">
+                <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="gregnewman" data-text="A must see:">Tweet</a>
+                <br />
+                <g:plusone size="medium" annotation="none"></g:plusone>
+                <script type="text/javascript">
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+            </div>
+
+        </div>
+    </article>
     <div class="clearfix"></div>
 {% endblock %}

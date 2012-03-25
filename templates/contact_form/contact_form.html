@@ -1,4 +1,6 @@
-{% extends "base-no-aside.html" %} 
+{% extends "base.html" %} 
+
+{% block body-class %}contact-body{% endblock %}
 
 {% block page_title %}Contact Greg Newman, the artist, illustrator and developer{% endblock %}
 
@@ -11,20 +13,22 @@
 
 {% block content %} 
 <article>
-    <h2>Contact Greg</h2> 
-    <p>Use the form below to contact Greg.  He's busy but he will reply (unless your a ruthless spammer bot thing).</p>
+    <div class="ten columns">
+        <h2>Contact Greg</h2> 
+        <p>Use the form below to contact Greg.  He's busy but he will reply (unless your a ruthless spammer bot thing).</p>
 
-    <div class="contact-form">
-    {% if form.errors %} 
-    <p class="error-alert">The following fields are required.</p> 
-    {% endif %}
+        <div class="contact-form">
+        {% if form.errors %} 
+        <p class="error-alert">The following fields are required.</p> 
+        {% endif %}
 
-    <form method="post" action=".">{% csrf_token %}
-        {% for field in form %}
-                    {% include 'common/form.html' %}
-        {% endfor %} 
-        <button>SEND</button>
-    </form> 
+        <form method="post" action=".">{% csrf_token %}
+            {% for field in form %}
+                        {% include 'common/form.html' %}
+            {% endfor %} 
+            <button>SEND</button>
+        </form> 
+        </div>
     </div>
 </article>
 {% endblock %} 
