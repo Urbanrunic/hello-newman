@@ -194,9 +194,9 @@ footer h3 { color: #F4DCAC; }
 
 #product-images .product-img { margin: 0 0 10px 0; }
 
-#product-images .images-nav { position: relative; width: 300px; height: 28px; margin: 10px 0 0 0; background: #e4e4e4; }
+#product-images .images-nav { position: relative; width: 300px; height: 28px; margin: 10px 0 0 0; }
 
-#product-images .images-list { position: absolute; width: 244px; top: 0; left: 28px; padding: 7px 0 8px 0; text-align: center; }
+#product-images .images-list { position: absolute; top: 0; left: 28px; padding: 7px 0 8px 0; }
 
 #product-images .images-list li { display: inline; padding: 0 5px; list-style: none; border-left: 1px solid #666; }
 
