@@ -24,7 +24,7 @@
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+    .rows                                        { margin-bottom: 20px; }
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
@@ -215,15 +215,19 @@
     /* Use clearfix class on parent to clear nested columns,
     or wrap each row of columns in a <div class="row"> */
     .clearfix:before,
-    .clearfix:after {
+    .clearfix:after,
+    .rows:before,
+    .rows:after {
       content: '\0020';
       display: block;
       overflow: hidden;
       visibility: hidden;
       width: 0;
       height: 0; }
+    .rows:after,
     .clearfix:after {
       clear: both; }
+    .rows,
     .clearfix {
       zoom: 1; }
 
