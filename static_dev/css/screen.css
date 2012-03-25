@@ -218,8 +218,6 @@ footer h3 { color: #F4DCAC; }
 
 /*============================================================ Cart
 ============================================================*/
-#cart-content { float: left; }
-
 #cart-table { text-align: left; width: 100%; border-collapse: collapse; border-spacing: 0; }
 
 #cart-table td, #cart-table th { text-align: left; }
@@ -260,8 +258,6 @@ footer h3 { color: #F4DCAC; }
 #cart-body .item-options { text-align: center; }
 
 #cart-body .item-options .remove-btn { cursor: pointer; display: block; }
-
-#cart-body .item-options span { display: none; }
 
 /* Cart Footer ---------------------------------------------*/
 #cart-footer { margin: 10px 0; }
