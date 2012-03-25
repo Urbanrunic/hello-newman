@@ -128,7 +128,7 @@ label.required { color: #b6764c; }
 
 form input[type=text], form input[type=password] { width: 250px; padding: 3px 8px; color: #333; border: 1px solid #000; }
 
-form select { width: 200px; color: #fff; border: 1px solid #999; }
+form select { width: 200px; border: 1px solid #999; }
 
 form textarea { padding: 3px 8px; width: 320px; height: 90px; color: #333; border: 1px solid #000; }
 
