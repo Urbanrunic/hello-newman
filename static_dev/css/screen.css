@@ -190,6 +190,8 @@ footer h3 { color: #F4DCAC; }
 
 /* ` Store View Elements
 ----------------------------------------------------------------------------*/
+#navigation li { font-size: 0.8em; }
+
 #home-page .product { float: left; width: 50%; }
 
 #product-images .product-img { margin: 0 0 10px 0; }
