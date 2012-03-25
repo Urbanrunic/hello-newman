@@ -242,8 +242,6 @@ footer h3 { color: #F4DCAC; }
 
 #cart-body td { padding: 9px 12px 9px 0; }
 
-#cart-body tr.row-alt th, #cart-body tr.row-alt td { background: #f0f0f0; }
-
 #cart-body .item-price { padding-right: 5px; }
 
 #cart-body .item-qty input { width: 2em; }
