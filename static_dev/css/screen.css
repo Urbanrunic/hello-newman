@@ -211,3 +211,5 @@ footer h3 { color: #F4DCAC; }
 #product-images .images-next a { display: block; width: 18px; height: 18px; background: url("btn-next.gif") no-repeat; }
 
 #product-images .images-prev span, #product-images .images-next span { display: none; }
+
+#product-page button { margin-left: 0 !important; }
