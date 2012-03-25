@@ -1,95 +1,303 @@
-/*
-Syntax error: Invalid CSS after "  background: url(": expected ")", was "{{ 'btn-delete...."
-        on line 787 of /Users/greg/dev/hello-newman/sass/screen.scss
+/* ==|== primary styles ===================================================== Author: Greg Newman  ========================================================================== */
+/* ` Mixins
+----------------------------------------------------------------------------*/
+/* ` @font-face fonts
+----------------------------------------------------------------------------*/
+@font-face { font-family: 'MerriweatherRegular'; src: url("../fonts/Merriweather-webfont.eot"); src: url("../fonts/Merriweather-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-webfont.woff") format("woff"), url("../fonts/Merriweather-webfont.ttf") format("truetype"), url("../fonts/Merriweather-webfont.svg#MerriweatherRegular") format("svg"); font-weight: normal; font-style: normal; }
 
-Backtrace:
-/Users/greg/dev/hello-newman/sass/screen.scss:787
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:898:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/lexer.rb:193:in `expected!'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:448:in `assert_tok'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:300:in `funcall'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:287:in `ident'
-(eval):2:in `unary_not'
-(eval):2:in `unary_div'
-(eval):2:in `unary_minus'
-(eval):2:in `unary_plus'
-(eval):3:in `times_div_or_mod'
-(eval):3:in `plus_or_minus'
-(eval):3:in `relational'
-(eval):3:in `eq_or_neq'
-(eval):3:in `and_expr'
-(eval):3:in `or_expr'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:266:in `space'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:251:in `interpolation'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:217:in `expr'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:442:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:442:in `assert_expr'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/script/parser.rb:49:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:788:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:788:in `sass_script'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:662:in `value!'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:639:in `declaration'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:408:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:872:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:872:in `rethrow'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:418:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:380:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:372:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:361:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:355:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:379:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:372:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:57:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/scss/parser.rb:26:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:320:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:293:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/util.rb:297:in `silence_sass_warnings'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.7/lib/sass/../sass/engine.rb:241:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:136:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:135:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:134:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:114:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:99:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/compiler.rb:96:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:142:in `recompile'
-/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:30:in `temporary_multipath_handler'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:27:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:17:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:16:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:16:in `run'
-/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.4.0/lib/rb-fsevent/fsevent.rb:34:in `call'
-/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.4.0/lib/rb-fsevent/fsevent.rb:34:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rbfsevent.rb:20:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:86:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/bin/compass:25
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/bin/compass:39:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.5/bin/compass:39
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  background: url(\": expected \")\", was \"{{ 'btn-delete....\"\A         on line 787 of /Users/greg/dev/hello-newman/sass/screen.scss"; }
+@font-face { font-family: 'MerriweatherLight'; src: url("../fonts/Merriweather-Light-webfont.eot"); src: url("../fonts/Merriweather-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Light-webfont.woff") format("woff"), url("../fonts/Merriweather-Light-webfont.ttf") format("truetype"), url("../fonts/Merriweather-Light-webfont.svg#MerriweatherLight") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'MerriweatherBold'; src: url("../fonts/Merriweather-Bold-webfont.eot"); src: url("../fonts/Merriweather-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Bold-webfont.woff") format("woff"), url("../fonts/Merriweather-Bold-webfont.ttf") format("truetype"), url("../fonts/Merriweather-Bold-webfont.svg#MerriweatherBold") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'MerriweatherBlack'; src: url("../fonts/Merriweather-Black-webfont.eot"); src: url("../fonts/Merriweather-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Black-webfont.woff") format("woff"), url("../fonts/Merriweather-Black-webfont.ttf") format("truetype"), url("../fonts/Merriweather-Black-webfont.svg#MerriweatherBlack") format("svg"); font-weight: normal; font-style: normal; }
+
+/* from rogie header:after{ content:''; position:absolute; display:block; width: 100%; transform: rotate(10) } header{ linear-gradient.... } .body-content:before{ */
+/* ` Block Level Elements
+----------------------------------------------------------------------------*/
+body { background: #824013; }
+
+nav { position: relative; height: 43px; background: #5b5853; }
+
+header { background-color: #eeeae4; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeae4), to(#dfd8ca)); background-image: -webkit-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -moz-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -o-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -ms-linear-gradient(top, #eeeae4, #dfd8ca); background-image: linear-gradient(top, #eeeae4, #dfd8ca); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeae4', EndColorStr='#dfd8ca'); height: 182px; margin-bottom: 40px; position: relative; }
+
+header:after { content: ''; position: absolute; top: 160px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
+
+header h1 { position: absolute; top: 20px; left: 10px; }
+
+section { background: #efebe3; padding: 40px 0 100px 0; }
+
+footer { position: relative; background: #824013; margin: 40px 0 0 0; padding: 50px 0 20px 0; color: #fff; font: 18px/27px "MerriweatherLight", Arial, sans-serif; }
+
+footer:before { content: ''; position: absolute; top: -70px; left: 0; height: 50px; display: block; width: 100%; background: #efebe3; transform: rotate(-1deg); -ms-transform: rotate(-1deg); /* IE 9 */ -moz-transform: rotate(-1deg); /* Firefox */ -webkit-transform: rotate(-1deg); /* Safari and Chrome */ -o-transform: rotate(-1deg); /* Opera */ }
+
+footer a, footer a:active, footer a:visited { color: #fff; }
+
+footer img { float: left; margin-right: 100px; }
+
+/* ` Header and Nav Elements
+----------------------------------------------------------------------------*/
+.bike { height: 204px; width: 379px; position: absolute; top: 0px; right: -45px; background: url(../img/46harley-logo.png) no-repeat top left; z-index: 9; }
+
+.navbar ul { margin: 0; padding: 0; }
+
+.navbar ul li { float: left; font-family: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2",sans-serif; font-style: normal; font-weight: 400; font-size: 24px; text-transform: uppercase; letter-spacing: 0; }
+
+.navbar a { text-decoration: none; color: #fff; padding: 0 6px; line-height: 43px; }
+
+.navbar li.shop-link { padding-left: 15px; background: black url(../img/shop_nav_bg.png) no-repeat left bottom; }
+
+.navbar ul li.shop-link a, .navbar ul li.shop-link a:visited { background: #000; padding-right: 10px; color: #f4dcac; font-family: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2",sans-serif; font-style: normal; font-weight: 700; }
+
+.about .about-nav a, .commissions .commissions-nav a, .portfolio-body .portfolio-nav a, .journal-body .journal-nav a, .contact-body .contact-nav a { color: #f4dcac; }
+
+.social ul { margin: 8px 0 0 0; padding: 0; z-index: 9999; }
+
+.social ul li { float: right; margin: 0 15px; padding: 0; }
+
+.social ul li a { display: block; width: 27px; height: 24px; }
+
+li.twitter { margin-right: 0 !important; }
+
+li.twitter a { background: url(../img/icon-twitter.png) no-repeat top left; }
+
+li.dribbble a { background: url(../img/icon-dribbble.png) no-repeat top left; }
+
+li.facebook a { background: url(../img/icon-facebook.png) no-repeat top left; }
+
+li.flickr a { background: url(../img/icon-flickr.png) no-repeat top left; }
+
+li.behance a { background: url(../img/icon-behance.png) no-repeat top left; }
+
+li.twitter a:hover { background: url(../img/icon-twitter-on.png) no-repeat top left; }
+
+li.dribbble a:hover { background: url(../img/icon-dribbble-on.png) no-repeat top left; }
+
+li.facebook a:hover { background: url(../img/icon-facebook-on.png) no-repeat top left; }
+
+li.flickr a:hover { background: url(../img/icon-flickr-on.png) no-repeat top left; }
+
+li.behance a:hover { background: url(../img/icon-behance-on.png) no-repeat top left; }
+
+/* ` Standard Elements
+----------------------------------------------------------------------------*/
+p, ul { font: 18px/27px "MerriweatherRegular", Arial, sans-serif; }
+
+h1, h2, h3, h4 { font-family: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2",sans-serif; font-style: normal; font-weight: 700; font-size: 24px; line-height: 1.4em; }
+
+h1 { font-size: 2.4em; }
+
+blockquote { font: 18px/27px "MerriweatherBold", Arial, sans-serif; color: #333; }
+
+/* ` Home View Elements
+----------------------------------------------------------------------------*/
+.home-banner { text-align: center; }
+
+.about-copy { width: 800px; margin: 20px auto; text-align: center; }
+
+.portfolio-thumbs { width: 820px; margin: 0 auto; }
+
+.portfolio-thumbs img { margin: 10px; border: 6px solid #000; }
+
+/* ` Portfolio View Elements
+----------------------------------------------------------------------------*/
+.portfolio-large { padding: 10px; border: 2px solid #000; background: #fff; }
+
+.portfolio-related, .portfolio-tags { margin-top: 25px; font-size: 1.2em; }
+
+.portfolio-details, .portfolio-categories, .portfolio-purchase, .portfolio-social { margin-bottom: 25px; font-size: 1.2em; }
+
+.portfolio-purchase a { background-color: #ae5a31; background-image: -webkit-gradient(linear, left top, left bottom, from(#ae5a31), to(#7f4121)); background-image: -webkit-linear-gradient(top, #ae5a31, #7f4121); background-image: -moz-linear-gradient(top, #ae5a31, #7f4121); background-image: -o-linear-gradient(top, #ae5a31, #7f4121); background-image: -ms-linear-gradient(top, #ae5a31, #7f4121); background-image: linear-gradient(top, #ae5a31, #7f4121); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ae5a31', EndColorStr='#7f4121'); text-decoration: none; font-size: 1.1em; border: 2px solid #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 6px 10px; outline: 0; border: 0; cursor: pointer; color: #fff; font-weight: bold; }
+
+.portfolio-purchase a:hover { color: #F4DCAC; }
+
+/* ` Flatpage View Elements
+----------------------------------------------------------------------------*/
+.profile-img, .commissions section img { float: right; margin-left: 20px; padding: 4px; background: #fff; border: 1px solid #000; }
+
+/* ` Form View Elements
+----------------------------------------------------------------------------*/
+form { margin: 30px auto; position: relative; font: 18px/27px "MerriweatherRegular", Arial, sans-serif; }
+
+.formrow { width: 630px; background: #e0d9ca; border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin-bottom: 4px; padding: 10px; }
+
+.formrow span { display: block; color: #999999; margin-left: 210px; }
+
+form label { display: block; float: left; width: 200px; margin: 0 5px 2px 0; font-size: 0.9em; line-height: 1.5em; font-weight: bold; text-align: left; }
+
+label.required { color: #b6764c; }
+
+form input[type=text], form input[type=password] { width: 250px; padding: 3px 8px; color: #333; border: 1px solid #000; }
+
+form select { width: 200px; border: 1px solid #999; }
+
+form textarea { padding: 3px 8px; width: 320px; height: 90px; color: #333; border: 1px solid #000; }
+
+form input[type=text]:focus, form textarea:focus, form select:focus { color: #000; }
+
+.errorField { background: url(../img/error_bg.png); border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 0 10px 0 30px; margin-bottom: 4px; font-size: 0.9em; font-weight: bold; }
+
+.errorlist { color: #fff; background: #f33; font-size: 11px; font-weight: bold; text-align: center; padding: 3px 10px; list-style: none; float: left; width: 330px; }
+
+button { background-color: #ae5a31; background-image: -webkit-gradient(linear, left top, left bottom, from(#ae5a31), to(#7f4121)); background-image: -webkit-linear-gradient(top, #ae5a31, #7f4121); background-image: -moz-linear-gradient(top, #ae5a31, #7f4121); background-image: -o-linear-gradient(top, #ae5a31, #7f4121); background-image: -ms-linear-gradient(top, #ae5a31, #7f4121); background-image: linear-gradient(top, #ae5a31, #7f4121); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ae5a31', EndColorStr='#7f4121'); border: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 6px 10px; outline: 0; border: 0; cursor: pointer; color: #fff; margin: 10px 10px 10px 220px; font: 14px/21px "MerriweatherRegular", Arial, sans-serif; }
+
+button:hover { color: #fff; }
+
+/* ` Journal View Elements
+----------------------------------------------------------------------------*/
+.journal-body h2 a { text-decoration: none; }
+
+.entry-h1 { margin-top: -10px; }
+
+.entry-date { font: 12px/18px "MerriweatherLight", Arial, sans-serif; padding-left: 25px; }
+
+article p { padding-right: 20px; }
+
+article h3 { margin-top: 25px; }
+
+article ul li { list-style: disc; margin-left: 15px; line-height: 1.5em; }
+
+aside { margin-top: 94px; font: 14px/21px "MerriweatherRegular", Arial, sans-serif; }
+
+.social-buttons { margin-top: 20px; }
+
+.closing { margin-top: 50px; border-top: 1px solid #666; padding: 20px 0 0 100px; }
+
+.closing p { font: 14px/21px "MerriweatherLight", Arial, sans-serif; }
+
+.twitter-follow-button { margin-left: -50px; float: left; }
+
+.journal-excerpt { margin-bottom: 40px; padding-bottom: 20px; min-height: 670px; }
+
+.journal-excerpt h2 { height: 30px; overflow: hidden; }
+
+.journal-excerpt img { margin-bottom: 20px; display: block; border: 7px solid #000; }
+
+/* ` footer Elements
+----------------------------------------------------------------------------*/
+.skull { position: absolute; bottom: 20px; left: 0px; }
+
+footer h3 { color: #F4DCAC; }
+
+.respect a, .respect a:visited { text-decoration: none; }
+
+.respect { text-align: center; }
+
+#latest_tweet { margin-top: 50px; }
+
+.dribbble-shots { display: block; }
+
+.dribbble-shots img { border: 6px solid #000; }
+
+/* ` Store View Elements
+----------------------------------------------------------------------------*/
+#navigation li { font-size: 0.8em; }
+
+#home-page .product, #products-page .product { float: left; width: 50%; }
+
+#product-images .product-img { margin: 0 0 10px 0; }
+
+#product-images .images-nav { position: relative; width: 300px; height: 28px; margin: 10px 0 0 0; }
+
+#product-images .images-list { position: absolute; top: 0; left: 28px; padding: 7px 0 8px 0; }
+
+#product-images .images-list li { display: inline; padding: 0 5px; list-style: none; border-left: 1px solid #666; }
+
+#product-images .images-list li.image-1 { border-left: none; }
+
+#product-images .images-prev { position: absolute; top: 0; left: 0; padding: 5px; }
+
+#product-images .images-next { position: absolute; top: 0; right: 0; padding: 5px; }
+
+#product-images .images-prev a { display: block; width: 18px; height: 18px; background: url("btn-prev.gif") no-repeat; }
+
+#product-images .images-next a { display: block; width: 18px; height: 18px; background: url("btn-next.gif") no-repeat; }
+
+#product-images .images-prev span, #product-images .images-next span { display: none; }
+
+#product-page button { margin-left: 0 !important; }
+
+/*============================================================ Cart
+============================================================*/
+#cart-content { float: left; }
+
+#cart-table { text-align: left; border-collapse: collapse; border-spacing: 0; }
+
+#cart-table td, #cart-table th { text-align: left; }
+
+#update-btn-head { display: none; }
+
+/* Cart Table Columns --------------------------------------*/
+#col-item { width: 337px; }
+
+#col-price { width: 65px; }
+
+#col-qty { width: 40px; }
+
+#col-total { width: 65px; }
+
+#col-options { width: 30px; }
+
+/* Cart Table Header ---------------------------------------*/
+#cart-head { font-size: 9px; color: #fff; background: #404040; }
+
+#cart-head th { padding-top: 11px; padding-bottom: 11px; }
+
+#head-item { padding-left: 10px; }
+
+#head-options span { display: none; }
+
+/* Cart Table Body -----------------------------------------*/
+#cart-body { font-size: 9px; }
+
+#cart-body th { padding-left: 10px; font-weight: normal; }
+
+#cart-body td { padding: 9px 12px 9px 0; }
+
+#cart-body tr.row-alt th, #cart-body tr.row-alt td { background: #f0f0f0; }
+
+#cart-body .item-price { padding-right: 5px; }
+
+#cart-body .item-qty input { width: 2em; }
+
+#cart-body .item-total { font-weight: bold; }
+
+#cart-body .item-options { text-align: center; }
+
+#cart-body .item-options .remove-btn { width: 13px; height: 13px; background: url("btn-delete.gif") no-repeat; border: none; cursor: pointer; display: block; }
+
+#cart-body .item-options span { display: none; }
+
+/* Cart Footer ---------------------------------------------*/
+#cart-footer { margin: 10px 0; }
+
+#cart-footer .cart-update { padding: 10px 0; text-align: right; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+#cart-footer .update-btn { width: 85px; height: 18px; border: none; background: url("btn-update.gif") no-repeat; cursor: pointer; }
+
+#cart-footer .cart-shipping { float: left; display: inline; margin: -31px 0 0 11px; }
+
+#cart-footer #country { width: 160px; margin-left: 5px; padding: 2px 0; font-size: 11px; }
+
+#cart-footer .cart-discount { padding: 10px 0; border-bottom: 1px solid #ddd; text-align: right; }
+
+#cart-footer #cart_discount_code { width: 80px; margin-left: 10px; }
+
+#cart-footer .cart-discount p { margin: 1px 0; }
+
+#cart-footer .cart-total { padding: 15px 0; text-align: right; border-bottom: 1px solid #ddd; }
+
+#cart-footer .cart-total h3 { font-size: 16px; margin: 0; }
+
+#cart-footer .cart-total p { margin-bottom: 0; font-size: 9px; color: #999; }
+
+#cart-footer .cart-total #cart-shipping-tax p { margin-bottom: 7px; font-size: 11px; color: #666; }
+
+#cart-footer .cart-options { float: right; margin-top: 10px; }
+
+#cart-footer .cart-checkout { float: left; }
+
+#cart-footer .checkout-btn { width: 66px; height: 18px; margin-left: 8px; background: url("btn-checkout.gif") no-repeat; border: none; cursor: pointer; }
+
+#cart-footer .update-btn span, #cart-footer .checkout-btn span { display: none; }
+
+span.total-discount, span.total-shipping { font-weight: bold; }
