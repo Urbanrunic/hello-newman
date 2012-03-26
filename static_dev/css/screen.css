@@ -289,3 +289,5 @@ footer h3 { color: #F4DCAC; }
 #cart-footer .checkout-btn { margin-left: 8px; cursor: pointer; }
 
 span.total-discount, span.total-shipping { font-weight: bold; }
+
+#product-page .addthis_toolbox { margin: 20px 0 0 28px; }
