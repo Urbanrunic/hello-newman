@@ -24,7 +24,7 @@ header:after { content: ''; position: absolute; top: 180px; left: 0; height: 90p
 
 header h1 { position: absolute; top: 35px; left: -10px; }
 
-section { background: #efebe3; padding: 40px 0 100px 0; }
+section { background: #efebe3; padding: 0 0 60px 0; }
 
 footer { position: relative; background: #824013; margin: 40px 0 0 0; padding: 50px 0 20px 0; color: #fff; font: 18px/27px "MerriweatherLight", Arial, sans-serif; }
 
