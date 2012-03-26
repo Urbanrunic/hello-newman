@@ -174,7 +174,7 @@ aside { margin-top: 94px; font: 14px/21px "MerriweatherRegular", Arial, sans-ser
 
 /* ` footer Elements
 ----------------------------------------------------------------------------*/
-.skull { position: absolute; bottom: 20px; left: 0px; }
+.skull { position: absolute; bottom: 20px; right: 0px; }
 
 footer h3 { color: #F4DCAC; }
 
@@ -183,8 +183,6 @@ footer h3 { color: #F4DCAC; }
 .respect { text-align: center; }
 
 #latest_tweet { margin-top: 50px; }
-
-.dribbble-shots { display: block; }
 
 .dribbble-shots img { border: 6px solid #000; }
 
