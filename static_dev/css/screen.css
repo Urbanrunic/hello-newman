@@ -98,6 +98,8 @@ blockquote { font: 18px/27px "MerriweatherBold", Arial, sans-serif; color: #333;
 
 .portfolio-thumbs img { margin: 10px; border: 6px solid #000; }
 
+.portfolio-thumbs img:hover { -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
+
 /* ` Portfolio View Elements
 ----------------------------------------------------------------------------*/
 .portfolio-large { padding: 10px; border: 2px solid #000; background: #fff; }

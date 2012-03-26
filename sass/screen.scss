@@ -345,6 +345,12 @@ blockquote {
     border: 6px solid #000;
 }
 
+.portfolio-thumbs img:hover {
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
 /* ` Portfolio View Elements
 ----------------------------------------------------------------------------*/
 
