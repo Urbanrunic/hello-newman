@@ -18,9 +18,9 @@ body { background: #824013; }
 
 nav { position: relative; height: 43px; background: #5b5853; }
 
-header { background-color: #eeeae4; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeae4), to(#dfd8ca)); background-image: -webkit-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -moz-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -o-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -ms-linear-gradient(top, #eeeae4, #dfd8ca); background-image: linear-gradient(top, #eeeae4, #dfd8ca); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeae4', EndColorStr='#dfd8ca'); height: 182px; margin-bottom: 40px; position: relative; }
+header { background-color: #eeeae4; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeae4), to(#dfd8ca)); background-image: -webkit-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -moz-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -o-linear-gradient(top, #eeeae4, #dfd8ca); background-image: -ms-linear-gradient(top, #eeeae4, #dfd8ca); background-image: linear-gradient(top, #eeeae4, #dfd8ca); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeae4', EndColorStr='#dfd8ca'); height: 200px; margin-bottom: 40px; position: relative; }
 
-header:after { content: ''; position: absolute; top: 160px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
+header:after { content: ''; position: absolute; top: 180px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
 
 header h1 { position: absolute; top: 20px; left: -10px; }
 
