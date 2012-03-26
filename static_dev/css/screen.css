@@ -22,7 +22,7 @@ header { background-color: #eeeae4; background-image: -webkit-gradient(linear, l
 
 header:after { content: ''; position: absolute; top: 160px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
 
-header h1 { position: absolute; top: 20px; left: 10px; }
+header h1 { position: absolute; top: 20px; left: -10px; }
 
 section { background: #efebe3; padding: 40px 0 100px 0; }
 
