@@ -22,7 +22,7 @@ header { background-color: #eeeae4; background-image: -webkit-gradient(linear, l
 
 header:after { content: ''; position: absolute; top: 180px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
 
-header h1 { position: absolute; top: 20px; left: -10px; }
+header h1 { position: absolute; top: 35px; left: -10px; }
 
 section { background: #efebe3; padding: 40px 0 100px 0; }
 
@@ -36,7 +36,7 @@ footer img { float: left; margin-right: 100px; }
 
 /* ` Header and Nav Elements
 ----------------------------------------------------------------------------*/
-.bike { height: 204px; width: 379px; position: absolute; top: 0px; right: -45px; background: url(../img/46harley-logo.png) no-repeat top left; z-index: 9; }
+.bike { height: 204px; width: 379px; position: absolute; top: 25px; right: -45px; background: url(../img/46harley-logo.png) no-repeat top left; z-index: 9; }
 
 .navbar ul { margin: 0; padding: 0; }
 
