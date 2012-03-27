@@ -12,7 +12,7 @@
     </div>
     <div class="portfolio-thumbs rows">
         {% for work in works %}
-        <a href="{% url gallery-detail work.slug %}"><img src="{{ work.thumbnail.url }}" class="thumb-{{ forloop.counter }}" /></a>
+        <a href="{% url gallery-detail work.slug %}" title="{{ work.title }}"><img src="{{ work.thumbnail.url }}" class="thumb-{{ forloop.counter }}" alt="{{ work.title }} - {{ work.description }}" /></a>
         {% endfor %}
     </div>
 
