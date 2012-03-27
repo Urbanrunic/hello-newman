@@ -44,6 +44,8 @@ footer img { float: left; margin-right: 100px; }
 
 .navbar a { text-decoration: none; color: #fff; padding: 0 6px; line-height: 43px; }
 
+.navbar a:hover { color: #f4dcac; }
+
 .navbar li.shop-link { padding-left: 15px; background: black url(../img/shop_nav_bg.png) no-repeat left bottom; }
 
 .navbar ul li.shop-link a, .navbar ul li.shop-link a:visited { background: #000; padding-right: 10px; color: #f4dcac; font-family: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2",sans-serif; font-style: normal; font-weight: 700; }
