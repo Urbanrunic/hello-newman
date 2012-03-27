@@ -151,7 +151,7 @@ footer {
     margin: 40px 0 0 0;
     padding: 50px 0 20px 0;
     color: #fff;
-    font: 18px/27px 'MerriweatherLight', Arial, sans-serif;
+    font: 14px/21px 'MerriweatherLight', Arial, sans-serif;
 }
 
 footer:before {
@@ -594,6 +594,11 @@ aside {
     right: 70px;
 }
 
+footer p,
+footer ul {
+   font: 14px/21px 'MerriweatherRegular', Arial, sans-serif;
+}
+
 footer h3 {
     color: #F4DCAC;
 }
@@ -604,7 +609,10 @@ footer h3 {
 }
 
 .respect {
-    text-align: center;
+}
+
+.respect ul li {
+
 }
 
 #latest_tweet {

@@ -105,7 +105,16 @@
         <div class="container">
             <img src="{{ STATIC_URL }}img/skull.png" class="skull" />
 
-            <div class="five columns">
+            <div class="respect four columns">
+                <h3>Respectables</h3>
+                <ul>
+                    {% for person in people %}
+                    <li><a href="{{ person.url }}" target="_blank">{{ person.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="six columns">
                 <div class="dribbble-shots">
                     <h3>Latest Dribbble</h3>
                     <div id="dribbble-shots"></div>
@@ -116,15 +125,6 @@
                     <h3>From Twitter</h3>
                     <div class="loading"></div>
                 </div>
-            </div>
-
-            <div class="respect five columns">
-                <h3>Respectables</h3>
-                <ul>
-                    {% for person in people %}
-                    <li><a href="{{ person.url }}" target="_blank">{{ person.name }}</a></li>
-                    {% endfor %}
-                </ul>
             </div>
 
              <div class="copyright six columns">
