@@ -296,6 +296,7 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 ================================================== */
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) { .home-banner img { width: 768px; }
+  .thumb-6, .thumb-12, .thumb-18, .thumb-24, .thumb-30 { margin-right: 15px !important; }
   .portfolio-thumbs img { margin: 0 15px 10px 0; }
   .thumb-5, .thumb-10, .thumb-15, .thumb-20 { margin-right: 0 !important; } }
     /*  #Mobile (Portrait)
