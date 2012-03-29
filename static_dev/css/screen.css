@@ -307,11 +307,12 @@ span.total-discount, span.total-shipping { font-weight: bold; }
     /*  #Mobile (Portrait)
 ================================================== */
 /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) { .home-banner img { width: 300px; }
+@media only screen and (max-width: 767px) { .home-banner img { display: none; }
   p, ul { font-size: 0.9em; }
   .thumb-2, .thumb-4, .thumb-6, .thumb-8, .thumb-10, .thumb-12, .thumb-14, .thumb-16, .thumb-18, .thumb-20 { margin-right: 0 !important; }
-  .bike { display: none; }
-  header { height: 100px; }
+  .bike { top: 100px; }
+  section { padding-top: 120px; }
+  header { height: 120px; }
   header h1 img { width: 320px; }
   header h1 { top: 10px; left: 0; }
   header:after { content: ''; position: absolute; top: 80px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
@@ -332,8 +333,9 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 @media only screen and (min-width: 480px) and (max-width: 767px) { .home-banner img { width: 420px; }
   p, ul { font-size: 0.9em; }
   .portfolio-thumbs img { margin: 2px !important; width: 120px; }
-  .bike { display: none; }
+  .bike { top: 130px; right: 30px; }
   header { height: 140px; }
+  section { padding-top: 140px; }
   header h1 img { width: 440px; }
   header h1 { top: 10px; left: 0; }
   header:after { content: ''; position: absolute; top: 110px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }

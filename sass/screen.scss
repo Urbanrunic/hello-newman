@@ -920,7 +920,7 @@ span.total-shipping {
 
     @media only screen and (max-width: 767px) {
         .home-banner img {
-            width: 300px;
+            display: none;
         }
 
         p, ul {
@@ -939,9 +939,14 @@ span.total-shipping {
         .thumb-20 { margin-right: 0 !important; }
 
 
-        .bike { display: none; }
+        .bike {
+            top: 100px;
+        }
+
+        section { padding-top: 120px; }
+
         header {
-            height: 100px;
+            height: 120px;
         }
         header h1 img {
             width: 320px;
@@ -1048,10 +1053,15 @@ span.total-shipping {
         }
 
 
-        .bike { display: none; }
+        .bike {
+            top: 130px;
+            right: 30px;
+        }
+
         header {
             height: 140px;
         }
+        section { padding-top: 140px; }
         header h1 img {
             width: 440px;
         }
