@@ -11,7 +11,6 @@
 
 @font-face { font-family: 'MerriweatherBlack'; src: url("../fonts/Merriweather-Black-webfont.eot"); src: url("../fonts/Merriweather-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Black-webfont.woff") format("woff"), url("../fonts/Merriweather-Black-webfont.ttf") format("truetype"), url("../fonts/Merriweather-Black-webfont.svg#MerriweatherBlack") format("svg"); font-weight: normal; font-style: normal; }
 
-/* from rogie header:after{ content:''; position:absolute; display:block; width: 100%; transform: rotate(10) } header{ linear-gradient.... } .body-content:before{ */
 /* ` Block Level Elements
 ----------------------------------------------------------------------------*/
 body { background: #824013; }
@@ -31,8 +30,6 @@ footer { position: relative; background: #824013; margin: 40px 0 0 0; padding: 5
 footer:before { content: ''; position: absolute; top: -70px; left: 0; height: 50px; display: block; width: 100%; background: #efebe3; transform: rotate(-1deg); -ms-transform: rotate(-1deg); /* IE 9 */ -moz-transform: rotate(-1deg); /* Firefox */ -webkit-transform: rotate(-1deg); /* Safari and Chrome */ -o-transform: rotate(-1deg); /* Opera */ }
 
 footer a, footer a:active, footer a:visited { color: #fff; }
-
-footer img { float: left; margin-right: 100px; }
 
 /* ` Header and Nav Elements
 ----------------------------------------------------------------------------*/
@@ -304,9 +301,20 @@ span.total-discount, span.total-shipping { font-weight: bold; }
     /*  #Mobile (Portrait)
 ================================================== */
 /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) { .home-banner img { width: 320px; }
+@media only screen and (max-width: 767px) { .home-banner img { width: 300px; }
+  p, ul { font-size: 0.9em; }
+  .thumb-2, .thumb-4, .thumb-6, .thumb-8, .thumb-10, .thumb-12, .thumb-14, .thumb-16, .thumb-18, .thumb-20 { margin-right: 0 !important; }
   .bike { display: none; }
-  header h1 img { width: 370px; } }
+  header { height: 100px; }
+  header h1 img { width: 320px; }
+  header h1 { top: 10px; left: 0; }
+  header:after { content: ''; position: absolute; top: 80px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
+  .navbar a { font-size: 10px; }
+  footer { text-align: center; }
+  .skull { display: none; }
+  .profile-img, .commissions section img, .entry-body img { display: block; float: none; width: 80% !important; margin: 10px auto; padding: 4px; background: #fff; border: 1px solid #000; }
+  .portfolio-detail img { width: 90%; margin: 0 auto; }
+  article h1 { font-size: 1.4em; } }
 /* #Mobile (Landscape)
 ================================================== */
 /* Note: Design for a width of 480px */

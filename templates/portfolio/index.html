@@ -11,7 +11,7 @@
     <div class="portfolio-thumbs">
         <h1>{% if category %}{{ category|capfirst }} {% endif %}Gallery</h1>
         {% for work in works %}
-        <a href="{% url gallery-detail work.slug %}" title="{{ work.title }}"><img src="{{ work.thumbnail.url }}" {% if forloop.counter|divisibleby:"5" %}class="thumb-last"{% endif %} alt="{{ work.title }} = {{ work.description }}" /></a>
+        <a href="{% url gallery-detail work.slug %}" title="{{ work.title }}"><img src="{{ work.thumbnail.url }}" class="thumb-{{ forloop.counter }}" alt="{{ work.title }} = {{ work.description }}" /></a>
         {% endfor %}
     </div>
 {% endblock %}
