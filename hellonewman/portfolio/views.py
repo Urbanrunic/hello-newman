@@ -35,11 +35,12 @@ def category_list(request, slug):
     displays all images for the given category
     expects [slug]
     """
-
     category = get_object_or_404(PortfolioCategory, slug=slug)
+    tag = category.name
     works = PortfolioImage.objects.filter(published=True, category=category)
 
     return render_to_response("portfolio/index.html", {
+        'tag': tag,
         "category": category,
         "works": works,
     }, context_instance=RequestContext(request))
