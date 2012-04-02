@@ -55,6 +55,7 @@ def tag_list(request, tag):
     works = PortfolioImage.objects.filter(published=True, tags__slug__in=[tag])
 
     return render_to_response("portfolio/index.html", {
+        'tag': tag,
         "category": tags.name.title(),
         "works": works,
     }, context_instance=RequestContext(request))
