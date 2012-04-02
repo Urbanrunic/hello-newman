@@ -5,7 +5,7 @@
 {% block page_title %}{% if tag %}Tagged Portfolio images matching {{ tag }}{% else %}Portfolio images{% endif %} in Greg Newman's Recent Work{% endblock %}
 
 {% block meta_keywords %}gallery, portfolio, greg newman, illustration, art, paintings, wildlife, sports, portraits, caricatures, sketches, drawings, motorcycle art, motorcycles, harley davidson{% endblock %}
-{% block meta_description %}Portfolio of Greg Newman's illustration work.  Wildlife, portrait and motorcycle paintings.{% endblock %}
+{% block meta_description %}{% if tag %}Tagged Portfolio images matching {{ tag }}{% else %}Portfolio images{% endif %} in Greg Newman's illustration work.  Wildlife, portrait and motorcycle paintings. {{ tag }}{% endblock %}
 
 {% block content %}
     <div class="portfolio-thumbs">
