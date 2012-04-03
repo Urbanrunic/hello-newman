@@ -299,6 +299,8 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 
 .home .product, #products-page .product { text-align: center; }
 
+.minicart { margin-bottom: 40px; }
+
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */
