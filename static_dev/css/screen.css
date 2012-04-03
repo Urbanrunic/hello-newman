@@ -297,7 +297,7 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 
 .product-price { margin: 0 !important; }
 
-.home .product { text-align: center; }
+.home .product, #products-page .product { text-align: center; }
 
 /* #Tablet (Portrait)
 ================================================== */
