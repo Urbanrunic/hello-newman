@@ -293,9 +293,9 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 
 .product-title { width: 175px; font-size: 1.4em; margin: 10px auto; }
 
-.product-status { font-weight: bold; width: 48%; float: right; }
+.product-status { font-weight: bold; width: 48%; float: right; padding-right: 30px; }
 
-.product-price { margin: 0 !important; width: 48%; float: left; }
+.product-price { margin: 0 !important; width: 48%; float: left; padding-left: 30px; }
 
 .home .product { text-align: center; }
 
