@@ -291,6 +291,8 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 
 #product-page .addthis_toolbox { margin: 20px 0 0 28px; }
 
+.product-title { font-size: 1em; margin: 10px 0; }
+
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */
