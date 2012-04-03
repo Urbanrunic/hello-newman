@@ -299,7 +299,7 @@ span.total-discount, span.total-shipping { font-weight: bold; }
 
 .home .product, #products-page .product { text-align: center; }
 
-.minicart { margin-bottom: 40px; }
+#minicart { margin-bottom: 40px; }
 
 /* #Tablet (Portrait)
 ================================================== */
