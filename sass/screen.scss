@@ -886,10 +886,14 @@ span.total-shipping {
 
 .product-status {
     font-weight: bold;
+    width: 48%;
+    float: right;
 }
 
 .product-price {
     margin: 0 !important;
+    width: 48%;
+    float: left;
 }
 
 .home .product {
