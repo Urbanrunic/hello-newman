@@ -11,7 +11,7 @@ from django.views.generic import date_based
 from django.utils import simplejson as json
 
 from django.contrib.sites.models import Site
-from tagging.models import Tag, TaggedItem
+from taggit.models import Tag
 
 from hellonewman.blog.models import Entry, Distraction, Blog, FeedHit, Category
 from hellonewman.blog.exceptions import InvalidBlog
@@ -99,8 +99,9 @@ def tagged_entries(request, tag):
     """
     returns all posts tagged with `tag`
     """
-    tag = get_object_or_404(Tag, name=tag)
-    entries = TaggedItem.objects.get_by_model(Entry, tag)
+    tag = get_object_or_404(Tag, slug=tag)
+    entries = Entry.objects.filter(published=True, tags__slug__in=[tag])
+
 
     if 'blog_filter' in request.session:
         entries = entries.filter(blog__slug=request.session['blog_filter'])
