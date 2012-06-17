@@ -4,3 +4,5 @@ static/*
 local_settings.py
 .sass-cache
 .DS_Store
+hello-newman.sublime-workspace
+hello-newman.sublime-project

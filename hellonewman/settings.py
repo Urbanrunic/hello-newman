@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Greg Newman', 'greg@gregnewman.org'),
+    ('Tucker Jones', 'urbanrunic@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -204,11 +204,11 @@ LOGGING = {
 
 SKIP_SOUTH_TESTS=True
 
-GRAPPELLI_ADMIN_TITLE = 'Greg Newman'
+GRAPPELLI_ADMIN_TITLE = 'Tucker Joenz'
 
 #These are used when loading the test data
-SITE_DOMAIN = "gregnewman.org"
-SITE_NAME = "Greg Newman"
+SITE_DOMAIN = "tuckerjoenz.com"
+SITE_NAME = "Tucker Joenz Photography"
 
 CACHES = {
     'default': {

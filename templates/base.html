@@ -9,7 +9,7 @@
     <meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
 
     <meta name="description" content="{% block meta_description %}{% endblock %}">
-    <meta name="author" content="Greg Newman">
+    <meta name="author" content="Tucker Joenz">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -62,33 +62,22 @@
     </script>
 </head>
 
-<body id="gregnewman-org" class="{% block body-class %}base{% endblock %}">
-    <nav>
+<body id="tuckerjoenz-com" class="{% block body-class %}base{% endblock %}">
+    
+    <header>
         <div class="container sixteen columns">
-            <div class="navbar ten columns alpha">
-                <ul>
-                    <li class="shop-link"><a href="http://shop.gregnewman.org" title="Shop">Shop</a></li>
+            <div class="logo nine columnz alpha">
+                <a href="/"><img src="{{ STATIC_URL }}img/tj-logo.png" /></a>
+            </div>
+            <div class="navbar sixteen columns alpha">
+                <ul class="clearfix">
                     <li class="about-nav"><a href="/about/" title="About Greg Newman">About</a></li>
-                    <li class="commissions-nav"><a href="/commissions/" title="How commissions work">Commissions</a></li>
+                    <li class="commissions-nav"><a href="/prices/" title="Prices for Photgraphy">Pricing</a></li>
                     <li class="journal-nav"><a href="/journal/" title="Greg's blog">Journal</a></li> 
                     <li class="portfolio-nav"><a href="/portfolio/" title="Recent work">Gallery</a></li>
                     <li class="contact-nav"><a href="/contact/" title="Contact Greg">Contact</a></li>
                 </ul>
             </div>
-            <div class="social six columns omega">
-                <ul>
-                    <li class="twitter"><a href="http://twitter.com/gregnewman"></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/NewmanStudiosFineArt"></a></li>
-                    <li class="flickr"><a href="http://www.flickr.com/photos/busyashell/"></a></li>
-                    <li class="behance"><a href="http://www.behance.net/gregnewman"></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header>
-        <div class="container sixteen columns">
-            <div class="bike"></div>
-            <h1><a href="/"><img src="{{ STATIC_URL }}img/logo.png" /></a></h1>
         </div>
     </header>
 
@@ -105,8 +94,8 @@
 
              <div class="copyright sixteen columns">
                 <h3>Legal</h3>
-                <p>&copy;2010 Gregory Newman, All Rights Reserved.
-                Content, site design, images and illustrations may not be reproduced without written permission.</p>
+                <p>&copy;2012 Tucker Joenz, All Rights Reserved.
+                Content, site design and images may not be reproduced without written permission.</p>
             </div>
 
 
