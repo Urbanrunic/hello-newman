@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
-{% block body-class %}{% ifequal flatpage.url "/commissions/" %}commissions{% endifequal %}{% ifequal flatpage.url "/about/" %}about{% endifequal %}{% endblock %}
+{% block body-class %}{% ifequal flatpage.url "/prices/" %}Pricing{% endifequal %}{% ifequal flatpage.url "/about/" %}about{% endifequal %}{% endblock %}
 
-{% block page_title %}{% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} Greg Newman, the artist, illustrator and developer{% endblock %}
+{% block page_title %}{% ifequal flatpage.url "/prices/" %}Pricing{% else %}About{% endifequal %} Tucker Joenz Photography and Visual Artist{% endblock %}
 
-{% block meta_keywords %}{% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} greg, greg newman, greg, newman, illustration, illustrator, artist, designer, django, art, motorcycle, harley, harley art, painting, painter12, photoshop, watercolor, oil paint, drawing, sketching{% endblock %}
+{% block meta_keywords %}{% ifequal flatpage.url "/prices/" %}Pricing{% else %}About{% endifequal %} blog, journal, gallery, portfolio, tucker joenz, photography, commercial, editorial, food, music, architecture, architectural, conceptual, portraits, family, wedding, corporate, headshots{% endblock %}
 
 {% block meta_description %}
-    {% ifequal flatpage.url "/commissions/" %}Commissions{% else %}About{% endifequal %} Greg Newman is a freelance illustrator specializing in motorcycle, harley davidson, portrait, and wildlife illustrations; as well as design, and development for the intertubes.
+    {% ifequal flatpage.url "/prices/" %}Pricing{% else %}About{% endifequal %} Tucker Joenz is a commercial photographer, skilled in editorial, music, food, conceptual and architectural photography as well as film making; as well as design, and development for the intervebz.
 {% endblock %}
 
 {% block content %}

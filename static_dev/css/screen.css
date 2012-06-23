@@ -39,9 +39,9 @@ footer a, footer a:active, footer a:visited { color: #fff; }
 
 .about .about-nav a, .commissions .commissions-nav a, .portfolio-body .portfolio-nav a, .journal-body .journal-nav a, .contact-body .contact-nav a { color: #7cb3ff; }
 
-/*.social ul { margin: 8px 0 0 0; padding: 0; z-index: 9999; }
+.social ul { margin: 8px auto; padding: 0; display: block; width: 330px; }
 
-.social ul li { float: right; margin: 0 15px; padding: 0; }
+.social ul li { float: left; margin: 0 15px; padding: 0; }
 
 .social ul li a { display: block; width: 27px; height: 24px; }
 
@@ -65,8 +65,15 @@ li.facebook a:hover { background: url(../img/icon-facebook-on.png) no-repeat top
 
 li.flickr a:hover { background: url(../img/icon-flickr-on.png) no-repeat top left; }
 
-li.behance a:hover { background: url(../img/icon-behance-on.png) no-repeat top left; }*/
+li.behance a:hover { background: url(../img/icon-behance-on.png) no-repeat top left; }
 
+li.pinterest a { background: url(../img/Pinterest-Icon.png) no-repeat top left; }
+
+li.pinterest a:hover { background: url(../img/Hover-Pinterest-Icon.png) no-repeat top left; }
+
+li.google-plus a { background: url(../img/GooglePlus-Icon.png) no-repeat top left; }
+
+li.google-plus a:hover { background: url(../img/Hover-GooglePlus-Icon.png) no-repeat top left; }
 /* ` Standard Elements
 ----------------------------------------------------------------------------*/
 p, ul { font: 18px/27px "MerriweatherRegular", Arial, sans-serif; }
@@ -201,7 +208,7 @@ footer h3 { color: #858585; }
   header { height: 120px; }
   header h1 img { width: 320px; }
   header h1 { top: 10px; left: 0; }
-  header:after { content: ''; position: absolute; top: 80px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
+  /*header:after { content: ''; position: absolute; top: 80px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }*/
   .navbar a { font-size: 10px; }
   footer { text-align: center; }
   .skull { display: none; }
@@ -224,7 +231,7 @@ footer h3 { color: #858585; }
   section { padding-top: 140px; }
   header h1 img { width: 440px; }
   header h1 { top: 10px; left: 0; }
-  header:after { content: ''; position: absolute; top: 110px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }
+/*  header:after { content: ''; position: absolute; top: 110px; left: 0; height: 90px; display: block; width: 100%; background: #efebe3; transform: rotate(1deg); -ms-transform: rotate(1deg); /* IE 9 */ -moz-transform: rotate(1deg); /* Firefox */ -webkit-transform: rotate(1deg); /* Safari and Chrome */ -o-transform: rotate(1deg); /* Opera */ }*/
   .navbar a { font-size: 16px; }
   footer { text-align: center; }
   .skull { display: none; }
